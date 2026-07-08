@@ -1,0 +1,2 @@
+import { media } from "@/lib/property";
+export function Floorplans(){return <section className="section"><div className="container"><p className="eyebrow">Floorplans</p><h2>See how the home flows.</h2><div className="floorplans">{media.floorplans.map(f=><figure key={f.title}><div className="floorplan-img"><img src={f.url} alt={`${f.title} floorplan`}/></div><figcaption>{f.title}</figcaption></figure>)}</div></div></section>}

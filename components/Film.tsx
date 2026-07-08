@@ -1,0 +1,2 @@
+import { media } from "@/lib/property";
+export function Film(){return <section id="film" className="section forest"><div className="container"><p className="eyebrow light">Cinematic property tour</p><h2 className="light-heading">Experience the estate.</h2><div className="embed"><iframe src={media.video} title="Enumclaw Forest Estate property film" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen /></div></div></section>}

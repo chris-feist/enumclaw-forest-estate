@@ -1,0 +1,2 @@
+import { media } from "@/lib/property";
+export function Matterport(){return <section className="section cream"><div className="container"><div className="split-heading"><div><p className="eyebrow">Interactive 3D tour</p><h2>Walk through every room.</h2></div><p>Explore the layout at your own pace, from the great room and kitchen to the bedrooms, bonus room and garage.</p></div><div className="embed light-embed"><iframe src={media.matterport} title="Matterport 3D tour" allow="fullscreen" allowFullScreen/></div></div></section>}
