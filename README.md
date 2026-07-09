@@ -39,3 +39,10 @@ The future shop image is conceptual only. PBRS usage, costs, building feasibilit
 - Added fenced, turf dog run to notable features.
 - Corrected trail messaging to describe one existing trail spanning the property, with room to add more.
 - Added five-minute downtown Enumclaw messaging, including shopping, dining, bars, breweries, and nightlife.
+
+## v0.5.0 updates
+
+- Reworked the gallery to use explicit `standard` and `wide` image layouts instead of index-based sizing.
+- Reordered the gallery so standard images finish in balanced desktop pairs.
+- Removed the property-boundary image from the general gallery; it remains in the land section where it has context.
+- Reformatted the gallery component and media definitions into readable multiline JSX and objects for clearer Git diffs.
