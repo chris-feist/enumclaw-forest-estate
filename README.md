@@ -46,3 +46,9 @@ The future shop image is conceptual only. PBRS usage, costs, building feasibilit
 - Reordered the gallery so standard images finish in balanced desktop pairs.
 - Removed the property-boundary image from the general gallery; it remains in the land section where it has context.
 - Reformatted the gallery component and media definitions into readable multiline JSX and objects for clearer Git diffs.
+
+## v0.5.1 updates
+
+- Added a Next.js-generated sitemap at `/sitemap.xml`.
+- Added a Next.js-generated robots file at `/robots.txt`.
+- Configured both files to use `https://enumclawforestestate.com` as the canonical site URL.
