@@ -79,3 +79,29 @@ The future shop image is conceptual only. PBRS usage, costs, building feasibilit
 - Replaced `app/twitter-image.jpg`.
 - Saved the uploaded source graphic at `public/assets/social/enumclaw-forest-estate-preview-source.png`.
 - Updated the package version to `0.5.4`.
+
+
+## v0.5.5
+
+- Added Vercel Analytics via `@vercel/analytics`.
+- Added Vercel Speed Insights via `@vercel/speed-insights`.
+- Updated `app/layout.tsx` to render `<Analytics />` and `<SpeedInsights />`.
+- Added campaign-ready UTM examples for paid and organic traffic.
+
+### Enable in Vercel
+
+After deployment, open the Vercel project and enable:
+
+1. **Analytics**
+2. **Speed Insights**
+
+### Suggested campaign URLs
+
+Use tagged URLs when sharing or advertising so traffic sources are easier to review:
+
+```text
+https://www.enumclawforestestate.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=forest_estate_launch
+https://www.enumclawforestestate.com/?utm_source=instagram&utm_medium=paid_social&utm_campaign=forest_estate_launch
+https://www.enumclawforestestate.com/?utm_source=facebook&utm_medium=organic_social&utm_campaign=todd_post
+https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_video&utm_campaign=property_tour
+```
