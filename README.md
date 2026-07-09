@@ -60,3 +60,22 @@ The future shop image is conceptual only. PBRS usage, costs, building feasibilit
 - Added `app/opengraph-image.jpg` and `app/twitter-image.jpg`.
 - Updated `app/layout.tsx` with Open Graph and Twitter metadata for Apple Messages, Facebook, LinkedIn, Slack, and other social previews.
 - Confirmed canonical metadata points to `https://enumclawforestestate.com`.
+
+
+## v0.5.3
+
+- Replaced the social preview image with a branded 1200×630 image based on the real video screenshot.
+- Updated `public/assets/social/enumclaw-forest-estate-preview.jpg`.
+- Updated `app/opengraph-image.jpg` and `app/twitter-image.jpg`.
+- Added the original screenshot as `public/assets/social/social-preview-source.png` for future editing.
+- Refined social metadata descriptions for the website preview card.
+
+
+## v0.5.4
+
+- Updated the social preview image using the approved final marketing graphic.
+- Replaced `public/assets/social/enumclaw-forest-estate-preview.jpg`.
+- Replaced `app/opengraph-image.jpg`.
+- Replaced `app/twitter-image.jpg`.
+- Saved the uploaded source graphic at `public/assets/social/enumclaw-forest-estate-preview-source.png`.
+- Updated the package version to `0.5.4`.

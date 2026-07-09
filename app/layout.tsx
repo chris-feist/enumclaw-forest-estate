@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Enumclaw Forest Estate | 19.55 Acres in Enumclaw, WA",
   description:
-    "Explore a 3,820 sq. ft. custom home on 19.55 private acres in Enumclaw, Washington, with Mount Rainier views, forest privacy, a Matterport tour, a whole-home generator, and room to build.",
+    "Explore a 3,820 sq. ft. custom home on 19.55 private acres in Enumclaw, Washington, with Mount Rainier views, forest privacy, a whole-home generator, future shop potential, and downtown Enumclaw just minutes away.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Enumclaw Forest Estate | 19.55 Private Acres",
     description:
-      "A custom 3,820 sq. ft. home on 19.55 private acres in Enumclaw, Washington, with forest privacy, Mount Rainier views, and room to build.",
+      "A custom 3,820 sq. ft. home on 19.55 private acres in Enumclaw, Washington, with forest privacy, Mount Rainier views, and future shop potential.",
     url: siteUrl,
     siteName: "Enumclaw Forest Estate",
     type: "website",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: socialImage,
         width: 1200,
         height: 630,
-        alt: "Enumclaw Forest Estate aerial view surrounded by private forest",
+        alt: "Enumclaw Forest Estate social preview with aerial home view and key property highlights",
       },
     ],
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: socialImage,
-        alt: "Enumclaw Forest Estate aerial view surrounded by private forest",
+        alt: "Enumclaw Forest Estate social preview with aerial home view and key property highlights",
       },
     ],
   },
