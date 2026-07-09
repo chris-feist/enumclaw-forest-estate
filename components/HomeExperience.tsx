@@ -3,6 +3,7 @@ import { media } from "@/lib/property";
 const features = [
   "Whole-home generator with automatic transfer switch",
   "Commercial dog wash station",
+  "Fenced, turf dog run",
   "Floor-to-ceiling cabinetry and a hidden walk-in pantry",
   "Whole-home audio system",
   "Enhanced whole-home insulation",

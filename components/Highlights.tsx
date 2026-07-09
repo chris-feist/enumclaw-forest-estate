@@ -1,10 +1,10 @@
 import { Home, Mountain, ShieldCheck, Trees } from "lucide-react";
 
 const items = [
-  { icon: Trees, title: "Private Forest", body: "Nearly twenty acres, including approximately 17.5 acres in PBRS with private trails for hiking and motorized recreation." },
+  { icon: Trees, title: "Private Forest", body: "Nearly twenty acres, including approximately 17.5 acres in PBRS with an established trail for hiking and compatible motorized recreation, plus room to add more." },
   { icon: Home, title: "Built in 2019", body: "A 3,820-square-foot craftsman residence with premium finishes, generous living spaces, and a 1,000-square-foot garage." },
   { icon: ShieldCheck, title: "Ready for Any Season", body: "A whole-home generator with automatic transfer switch, high-efficiency heating, central air, and enhanced insulation." },
-  { icon: Mountain, title: "Mountain Views", body: "Enjoy a direct Mount Rainier view while remaining close to downtown Enumclaw, schools, and everyday conveniences." },
+  { icon: Mountain, title: "Mountain Views", body: "Enjoy a direct Mount Rainier view while remaining approximately five minutes from downtown Enumclaw, schools, and everyday conveniences." },
 ];
 
 export function Highlights() {

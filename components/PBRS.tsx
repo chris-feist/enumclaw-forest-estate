@@ -1,7 +1,7 @@
 import { property } from "@/lib/property";
 const faqs=[
 ["Do I still own the PBRS land?","Yes. The PBRS acreage remains privately owned as part of the estate."],
-["How can the forest be used?","The land can support walking and hiking trails and compatible recreational use such as dirt bikes, quads and side-by-sides. Existing trails may be enjoyed and additional trails may be created, subject to applicable requirements."],
+["How can the forest be used?","The land includes one established trail running diagonally to the far back corner and can support walking, hiking and compatible recreational use such as dirt bikes, quads and side-by-sides. Additional trails may be created, subject to applicable requirements."],
 ["Can a portion be removed from PBRS?","King County provides a process for changes or removal. A future owner should confirm the procedure, timing and cost directly with the county before planning improvements."],
 ["What is the estimated removal cost?","The seller's current estimate is approximately $2,250 per acre. This is an estimate only and should be independently verified."],
 ["Why keep land in PBRS?","PBRS helps preserve the forest setting and can reduce the taxable value of enrolled acreage, supporting the privacy and natural character that define the property."],

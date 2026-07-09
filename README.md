@@ -20,7 +20,7 @@ npm start
 
 Import the repository into Vercel and point `enumclawforestestate.com` to the generated Vercel project.
 
-## v0.3.0 updates
+## v0.4.0 updates
 
 - Replaced remote listing photography with 68 local web-ready photos in `public/assets/photos/`
 - Corrected school names, grade ranges and distances
@@ -32,3 +32,10 @@ Import the repository into Vercel and point `enumclawforestestate.com` to the ge
 ## Important marketing disclaimer
 
 The future shop image is conceptual only. PBRS usage, costs, building feasibility, permits, utilities and tax implications should be independently verified by buyers with King County and qualified professionals.
+
+
+## v0.4.0 updates
+
+- Added fenced, turf dog run to notable features.
+- Corrected trail messaging to describe one existing trail spanning the property, with room to add more.
+- Added five-minute downtown Enumclaw messaging, including shopping, dining, bars, breweries, and nightlife.
