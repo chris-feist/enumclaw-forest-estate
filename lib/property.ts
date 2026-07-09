@@ -17,14 +17,24 @@ export const property = {
   parcelNumber: "2220069212",
   openHouses: [
     {
-      date: '07-10-2026',
+      date: "2026-07-10",
+      label: "Friday, July 10",
       time: "3–5 PM",
     },
     {
-      date: '07-11-2026',
+      date: "2026-07-11",
+      label: "Saturday, July 11",
       time: "12–2 PM",
     },
   ],
+  sectionLinks: {
+    gallery: "#gallery",
+    floorplans: "#floorplans",
+    features: "#features",
+    land: "#land",
+    location: "#location",
+    contact: "#contact",
+  },
   schools: [
     { name: "Sunrise Elementary School", grades: "K–5", distance: "1.2 mi" },
     { name: "Enumclaw Middle School", grades: "6–8", distance: "1.3 mi" },
@@ -74,11 +84,13 @@ export const media = {
   matterport: "https://my.matterport.com/show/?m=JiT3r3aNSj1&nt=1&brand=0&mls=1&",
 };
 
-export function isOpenHouseUpcoming(openHouse: { date: string }) {
+export type OpenHouse = (typeof property.openHouses)[number];
+
+export function isOpenHouseUpcoming(openHouse: OpenHouse) {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  const openHouseDate = new Date(openHouse.date);
+  const openHouseDate = new Date(`${openHouse.date}T00:00:00`);
   openHouseDate.setHours(0, 0, 0, 0);
 
   return openHouseDate >= today;

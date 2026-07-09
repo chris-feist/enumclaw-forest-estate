@@ -33,7 +33,7 @@ export function HomeExperience() {
             </figure>
           ))}
         </div>
-        <div className="feature-panel">
+        <div id="features" className="feature-panel">
           <h3>Notable features</h3>
           <div className="feature-list">{features.map((feature) => <div key={feature}>✓ <span>{feature}</span></div>)}</div>
         </div>

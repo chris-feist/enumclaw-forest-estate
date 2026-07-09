@@ -15,7 +15,6 @@ export function Footer() {
       </div>
       <p>© {new Date().getFullYear()} Enumclaw Forest Estate</p>
       <SocialLinks variant="footer" />
-      <p className="footer-mls">NWMLS #2543724</p>
     </footer>
   );
 }

@@ -1,5 +1,7 @@
-import { SocialLinks } from "./SocialLinks";
 import { BrandMark } from "./BrandMark";
+import { SocialLinks } from "./SocialLinks";
+import { property } from "@/lib/property";
+
 export function Navbar() {
   return (
     <header className="nav">
@@ -8,10 +10,13 @@ export function Navbar() {
       </a>
       <nav>
         <a href="#home">The Home</a>
-        <a href="#land">The Land</a>
+        <a href={property.sectionLinks.gallery}>Gallery</a>
+        <a href={property.sectionLinks.floorplans}>Floorplans</a>
+        <a href={property.sectionLinks.land}>The Land</a>
         <a href="#pbrs">PBRS</a>
-        <a href="#location">Location</a>
-        <a href="#contact">Contact</a> <SocialLinks variant="header" />
+        <a href={property.sectionLinks.location}>Location</a>
+        <a href={property.sectionLinks.contact}>Contact</a>
+        <SocialLinks variant="header" />
       </nav>
     </header>
   );

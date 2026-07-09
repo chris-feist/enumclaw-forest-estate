@@ -27,3 +27,15 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 ```text
 https://www.enumclawforestestate.com/?utm_source=qr&utm_medium=print&utm_campaign=property_brochure
 ```
+
+## Google Ads Sitelink URLs
+
+Use hash links for section-specific sitelinks:
+
+```text
+https://www.enumclawforestestate.com/#gallery
+https://www.enumclawforestestate.com/#floorplans
+https://www.enumclawforestestate.com/#features
+https://www.enumclawforestestate.com/#land
+https://www.enumclawforestestate.com/#contact
+```

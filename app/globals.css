@@ -911,3 +911,35 @@ footer div:nth-child(2) {
     max-width: none;
   }
 }
+
+/* v0.5.9 ad-friendly anchors and real social icons */
+html {
+  scroll-behavior: smooth;
+}
+
+section[id],
+#features {
+  scroll-margin-top: 96px;
+}
+
+.social-links a svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.social-links a svg path {
+  fill: currentColor;
+  stroke: none;
+}
+
+.social-button svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  flex: 0 0 auto;
+}

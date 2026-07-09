@@ -1,7 +1,6 @@
 import { Contact } from "@/components/Contact";
 import { Film } from "@/components/Film";
 import { Floorplans } from "@/components/Floorplans";
-import { FollowProperty } from "@/components/FollowProperty";
 import { Footer } from "@/components/Footer";
 import { FutureShop } from "@/components/FutureShop";
 import { Gallery } from "@/components/Gallery";
@@ -30,7 +29,6 @@ export default function Home() {
       <PBRS />
       <FutureShop />
       <Location />
-      {/* <FollowProperty /> */}
       <Contact />
       <Footer />
       <StickyCTA />

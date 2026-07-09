@@ -1,14 +1,5 @@
 import { getUpcomingOpenHouses, property } from "@/lib/property";
 
-const formatDate = (dateString: string) => {
-  const date = new Date(dateString);
-  return date.toLocaleDateString(undefined, {
-    weekday: "long",
-    month: "long",
-    day: "numeric",
-  });
-};
-
 export function OpenHouseBanner() {
   if (!getUpcomingOpenHouses().length) {
     return null;
@@ -19,8 +10,10 @@ export function OpenHouseBanner() {
       <span className="open-house-kicker">Open Houses This Weekend</span>
       <div className="open-house-times">
         {getUpcomingOpenHouses().map((openHouse) => (
-          <span key={`${formatDate(openHouse.date)}-${openHouse.time}`}>
-            <strong>{formatDate(openHouse.date)}</strong> {openHouse.time}
+          <span key={`${openHouse.date}-${openHouse.time}`}>
+            <strong>{openHouse.label}</strong>
+            {" "}
+            {openHouse.time}
           </span>
         ))}
       </div>

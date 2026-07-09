@@ -134,3 +134,11 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 - Added `isOpenHouseUpcoming` and `getUpcomingOpenHouses` helpers to `lib/property.ts`.
 - Updated open house rendering to automatically hide dates before today.
 - Preserved social links, CTA, MLS #2543724, Analytics, and Speed Insights.
+
+## v0.5.9
+
+  * Added real Instagram and Facebook SVG icons for social links.
+  * Added centralized section hash links for ad sitelinks in `lib/property.ts`.
+  * Added `#floorplans` and `#features` anchors for Google Ads sitelinks.
+  * Updated open house dates to use ISO values for automatic expiration while preserving display labels.
+  * Cleaned up duplicate footer MLS disclosure.
