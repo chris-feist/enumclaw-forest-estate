@@ -52,3 +52,11 @@ The future shop image is conceptual only. PBRS usage, costs, building feasibilit
 - Added a Next.js-generated sitemap at `/sitemap.xml`.
 - Added a Next.js-generated robots file at `/robots.txt`.
 - Configured both files to use `https://enumclawforestestate.com` as the canonical site URL.
+
+
+## v0.5.2
+
+- Added `public/assets/social/enumclaw-forest-estate-preview.jpg` using `public/assets/photos/photo-54.jpg`.
+- Added `app/opengraph-image.jpg` and `app/twitter-image.jpg`.
+- Updated `app/layout.tsx` with Open Graph and Twitter metadata for Apple Messages, Facebook, LinkedIn, Slack, and other social previews.
+- Confirmed canonical metadata points to `https://enumclawforestestate.com`.

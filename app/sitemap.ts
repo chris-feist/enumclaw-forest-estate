@@ -1,11 +1,9 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://enumclawforestestate.com";
-
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: siteUrl,
+      url: "https://enumclawforestestate.com",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,

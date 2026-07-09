@@ -1,20 +1,53 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const siteUrl = "https://enumclawforestestate.com";
+const socialImage = "/assets/social/enumclaw-forest-estate-preview.jpg";
+
 export const metadata: Metadata = {
-  title: "Enumclaw Forest Estate | Nearly 20 Private Acres",
+  metadataBase: new URL(siteUrl),
+  title: "Enumclaw Forest Estate | 19.55 Acres in Enumclaw, WA",
   description:
-    "A 3,820-square-foot craftsman home on 19.55 private acres in Enumclaw, Washington, with forest trails, Mount Rainier views and room to grow.",
-  metadataBase: new URL("https://enumclawforestestate.com"),
+    "Explore a 3,820 sq. ft. custom home on 19.55 private acres in Enumclaw, Washington, with Mount Rainier views, forest privacy, a Matterport tour, a whole-home generator, and room to build.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Enumclaw Forest Estate",
-    description: "Modern Living. Immersed in Nature.",
+    title: "Enumclaw Forest Estate | 19.55 Private Acres",
+    description:
+      "A custom 3,820 sq. ft. home on 19.55 private acres in Enumclaw, Washington, with forest privacy, Mount Rainier views, and room to build.",
+    url: siteUrl,
+    siteName: "Enumclaw Forest Estate",
     type: "website",
-    images: ["/assets/location/mount-rainier-view.png"],
+    locale: "en_US",
+    images: [
+      {
+        url: socialImage,
+        width: 1200,
+        height: 630,
+        alt: "Enumclaw Forest Estate aerial view surrounded by private forest",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Enumclaw Forest Estate | 19.55 Private Acres",
+    description:
+      "A custom 3,820 sq. ft. home on 19.55 private acres in Enumclaw, Washington.",
+    images: [
+      {
+        url: socialImage,
+        alt: "Enumclaw Forest Estate aerial view surrounded by private forest",
+      },
+    ],
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
       <body>{children}</body>
