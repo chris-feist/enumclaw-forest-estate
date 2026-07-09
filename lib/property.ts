@@ -26,6 +26,11 @@ export const property = {
       label: "Saturday, July 11",
       time: "12–2 PM",
     },
+    {
+      date: "2026-07-12",
+      label: "Sunday, July 12",
+      time: "12–2 PM",
+    },
   ],
   sectionLinks: {
     gallery: "#gallery",
@@ -80,8 +85,10 @@ export const media = {
     ["Primary Bath", "/assets/photos/photo-38.jpg"],
     ["Covered Patio", "/assets/photos/photo-45.jpg"],
   ] as const,
-  video: "https://listings.foto-guy.com/videos/019d3191-55d9-7303-8173-0973176473fd",
-  matterport: "https://my.matterport.com/show/?m=JiT3r3aNSj1&nt=1&brand=0&mls=1&",
+  video:
+    "https://listings.foto-guy.com/videos/019d3191-55d9-7303-8173-0973176473fd",
+  matterport:
+    "https://my.matterport.com/show/?m=JiT3r3aNSj1&nt=1&brand=0&mls=1&",
 };
 
 export type OpenHouse = (typeof property.openHouses)[number];
