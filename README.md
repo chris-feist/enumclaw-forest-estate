@@ -105,3 +105,32 @@ https://www.enumclawforestestate.com/?utm_source=instagram&utm_medium=paid_socia
 https://www.enumclawforestestate.com/?utm_source=facebook&utm_medium=organic_social&utm_campaign=todd_post
 https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_video&utm_campaign=property_tour
 ```
+
+
+## v0.5.6
+
+- Added an open house banner on the hero section.
+- Added configurable `openHouses` values in `lib/property.ts`.
+- Added a sticky `Schedule a Private Tour` CTA.
+- Updated the contact section CTA to prioritize scheduling a private tour by email.
+- Added a secondary call button for Todd.
+- Added NWMLS #2543724 to the contact card and footer disclosure.
+- Updated package version to `0.5.6`.
+
+
+## v0.5.7
+
+- Added Instagram and Facebook links to centralized property data.
+- Added reusable `SocialLinks` component.
+- Added `FollowProperty` section near the bottom of the page.
+- Added social links to the header, contact area, and footer when supported by the current layout.
+- Preserved open house, CTA, Vercel Analytics, Speed Insights, and NWMLS #2543724 updates.
+
+
+## v0.5.8
+
+- Fixed desktop social button alignment in the contact/private showings area.
+- Ensured `FollowProperty` is imported in `app/page.tsx` when rendered.
+- Added `isOpenHouseUpcoming` and `getUpcomingOpenHouses` helpers to `lib/property.ts`.
+- Updated open house rendering to automatically hide dates before today.
+- Preserved social links, CTA, MLS #2543724, Analytics, and Speed Insights.

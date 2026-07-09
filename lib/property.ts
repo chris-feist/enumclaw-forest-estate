@@ -3,6 +3,7 @@ export const property = {
   tagline: "Modern Living. Immersed in Nature.",
   address: "23670 SE 448th St, Enumclaw, WA 98022",
   price: "$1,550,000",
+  mlsNumber: "2543724",
   squareFeet: 3820,
   bedrooms: 4,
   bathrooms: 2.5,
@@ -14,6 +15,16 @@ export const property = {
   annualTaxes: 9618,
   taxYear: 2026,
   parcelNumber: "2220069212",
+  openHouses: [
+    {
+      date: '07-10-2026',
+      time: "3–5 PM",
+    },
+    {
+      date: '07-11-2026',
+      time: "12–2 PM",
+    },
+  ],
   schools: [
     { name: "Sunrise Elementary School", grades: "K–5", distance: "1.2 mi" },
     { name: "Enumclaw Middle School", grades: "6–8", distance: "1.3 mi" },
@@ -25,6 +36,10 @@ export const property = {
     phone: "253-569-5341",
     email: "toddh@kw.com",
     logoUrl: "/assets/logos/kw-mountains-to-sound.png",
+  },
+  socialLinks: {
+    instagram: "https://www.instagram.com/enumclawforestestate/",
+    facebook: "https://www.facebook.com/EnumclawForestEstate",
   },
 };
 
@@ -58,3 +73,17 @@ export const media = {
   video: "https://listings.foto-guy.com/videos/019d3191-55d9-7303-8173-0973176473fd",
   matterport: "https://my.matterport.com/show/?m=JiT3r3aNSj1&nt=1&brand=0&mls=1&",
 };
+
+export function isOpenHouseUpcoming(openHouse: { date: string }) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const openHouseDate = new Date(openHouse.date);
+  openHouseDate.setHours(0, 0, 0, 0);
+
+  return openHouseDate >= today;
+}
+
+export function getUpcomingOpenHouses() {
+  return property.openHouses.filter(isOpenHouseUpcoming);
+}
