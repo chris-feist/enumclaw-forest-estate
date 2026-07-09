@@ -30,7 +30,7 @@ export default function Home() {
       <PBRS />
       <FutureShop />
       <Location />
-      <FollowProperty />
+      {/* <FollowProperty /> */}
       <Contact />
       <Footer />
       <StickyCTA />
