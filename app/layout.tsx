@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleAds } from "@/components/GoogleAds";
 import "./globals.css";
 
 const siteUrl = "https://enumclawforestestate.com";
@@ -53,6 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <GoogleAds />
         {children}
         <Analytics />
         <SpeedInsights />

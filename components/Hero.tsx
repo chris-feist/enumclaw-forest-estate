@@ -1,4 +1,6 @@
 import { OpenHouseBanner } from "@/components/OpenHouseBanner";
+import { TrackedLink } from "@/components/TrackedLink";
+import { AnalyticsEvents } from "@/lib/analytics";
 import { media, property } from "@/lib/property";
 
 export function Hero() {
@@ -19,12 +21,22 @@ export function Hero() {
         <h1>{property.name}</h1>
         <p className="hero-tagline">{property.tagline}</p>
         <div className="hero-actions">
-          <a className="button button-light" href="#film">
+          <TrackedLink
+            className="button button-light"
+            href="#film"
+            eventName={AnalyticsEvents.WatchFilm}
+            eventParams={{ location: "hero" }}
+          >
             Watch the Film
-          </a>
-          <a className="button button-outline" href="#contact">
+          </TrackedLink>
+          <TrackedLink
+            className="button button-outline"
+            href="#contact"
+            eventName={AnalyticsEvents.ScheduleTour}
+            eventParams={{ location: "hero" }}
+          >
             Schedule a Tour
-          </a>
+          </TrackedLink>
         </div>
       </div>
 

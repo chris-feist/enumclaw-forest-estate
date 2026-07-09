@@ -33,7 +33,6 @@ Import the repository into Vercel and point `enumclawforestestate.com` to the ge
 
 The future shop image is conceptual only. PBRS usage, costs, building feasibility, permits, utilities and tax implications should be independently verified by buyers with King County and qualified professionals.
 
-
 ## v0.4.0 updates
 
 - Added fenced, turf dog run to notable features.
@@ -53,14 +52,12 @@ The future shop image is conceptual only. PBRS usage, costs, building feasibilit
 - Added a Next.js-generated robots file at `/robots.txt`.
 - Configured both files to use `https://enumclawforestestate.com` as the canonical site URL.
 
-
 ## v0.5.2
 
 - Added `public/assets/social/enumclaw-forest-estate-preview.jpg` using `public/assets/photos/photo-54.jpg`.
 - Added `app/opengraph-image.jpg` and `app/twitter-image.jpg`.
 - Updated `app/layout.tsx` with Open Graph and Twitter metadata for Apple Messages, Facebook, LinkedIn, Slack, and other social previews.
 - Confirmed canonical metadata points to `https://enumclawforestestate.com`.
-
 
 ## v0.5.3
 
@@ -70,7 +67,6 @@ The future shop image is conceptual only. PBRS usage, costs, building feasibilit
 - Added the original screenshot as `public/assets/social/social-preview-source.png` for future editing.
 - Refined social metadata descriptions for the website preview card.
 
-
 ## v0.5.4
 
 - Updated the social preview image using the approved final marketing graphic.
@@ -79,7 +75,6 @@ The future shop image is conceptual only. PBRS usage, costs, building feasibilit
 - Replaced `app/twitter-image.jpg`.
 - Saved the uploaded source graphic at `public/assets/social/enumclaw-forest-estate-preview-source.png`.
 - Updated the package version to `0.5.4`.
-
 
 ## v0.5.5
 
@@ -106,7 +101,6 @@ https://www.enumclawforestestate.com/?utm_source=facebook&utm_medium=organic_soc
 https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_video&utm_campaign=property_tour
 ```
 
-
 ## v0.5.6
 
 - Added an open house banner on the hero section.
@@ -117,7 +111,6 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 - Added NWMLS #2543724 to the contact card and footer disclosure.
 - Updated package version to `0.5.6`.
 
-
 ## v0.5.7
 
 - Added Instagram and Facebook links to centralized property data.
@@ -125,7 +118,6 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 - Added `FollowProperty` section near the bottom of the page.
 - Added social links to the header, contact area, and footer when supported by the current layout.
 - Preserved open house, CTA, Vercel Analytics, Speed Insights, and NWMLS #2543724 updates.
-
 
 ## v0.5.8
 
@@ -137,8 +129,16 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 
 ## v0.5.9
 
-  * Added real Instagram and Facebook SVG icons for social links.
-  * Added centralized section hash links for ad sitelinks in `lib/property.ts`.
-  * Added `#floorplans` and `#features` anchors for Google Ads sitelinks.
-  * Updated open house dates to use ISO values for automatic expiration while preserving display labels.
-  * Cleaned up duplicate footer MLS disclosure.
+- Added real Instagram and Facebook SVG icons for social links.
+- Added centralized section hash links for ad sitelinks in `lib/property.ts`.
+- Added `#floorplans` and `#features` anchors for Google Ads sitelinks.
+- Updated open house dates to use ISO values for automatic expiration while preserving display labels.
+- Cleaned up duplicate footer MLS disclosure.
+
+## v0.6.0
+
+- Added Google Ads tag AW-18311573663 via Next.js `Script`.
+- Added reusable analytics wrapper in `lib/analytics.ts`.
+- Added `TrackedLink` client component for Google event tracking.
+- Tracks hero film clicks, schedule-tour clicks, phone clicks, email clicks, sticky CTA clicks, and open house CTA clicks.
+- Removed visible social/follow components from the page, header, footer, and contact area to preserve the latest design direction.

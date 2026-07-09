@@ -1,4 +1,5 @@
-import { SocialLinks } from "./SocialLinks";
+import { TrackedLink } from "./TrackedLink";
+import { AnalyticsEvents } from "@/lib/analytics";
 import { property } from "@/lib/property";
 
 export function Contact() {
@@ -25,18 +26,22 @@ Thank you,`,
             are best understood in person.
           </p>
           <div className="contact-actions">
-            <a
+            <TrackedLink
               className="button button-dark"
               href={`mailto:${realtor.email}?subject=${showingSubject}&body=${showingBody}`}
+              eventName={AnalyticsEvents.ScheduleTour}
+              eventParams={{ location: "contact_section" }}
             >
               Schedule a Private Tour
-            </a>
-            <a
+            </TrackedLink>
+            <TrackedLink
               className="button button-plain"
               href={`tel:+1${realtor.phone.replaceAll("-", "")}`}
+              eventName={AnalyticsEvents.CallTodd}
+              eventParams={{ location: "contact_section" }}
             >
               Call Todd
-            </a>
+            </TrackedLink>
           </div>
         </div>
 
@@ -44,10 +49,20 @@ Thank you,`,
           <img src={realtor.logoUrl} alt="KW Mountains to Sound Realty" />
           <h3>{realtor.name}</h3>
           <p>{realtor.company}</p>
-          <a href={`mailto:${realtor.email}`}>{realtor.email}</a>
-          <a href={`tel:+1${realtor.phone.replaceAll("-", "")}`}>
+          <TrackedLink
+            href={`mailto:${realtor.email}`}
+            eventName={AnalyticsEvents.EmailTodd}
+            eventParams={{ location: "agent_card" }}
+          >
+            {realtor.email}
+          </TrackedLink>
+          <TrackedLink
+            href={`tel:+1${realtor.phone.replaceAll("-", "")}`}
+            eventName={AnalyticsEvents.CallTodd}
+            eventParams={{ location: "agent_card" }}
+          >
             {realtor.phone}
-          </a>
+          </TrackedLink>
           <small>
             NWMLS #{property.mlsNumber}. Listing information is believed
             reliable but is not guaranteed. Buyer to verify all information.

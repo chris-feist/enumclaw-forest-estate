@@ -1,4 +1,6 @@
-import { getUpcomingOpenHouses, property } from "@/lib/property";
+import { TrackedLink } from "./TrackedLink";
+import { AnalyticsEvents } from "@/lib/analytics";
+import { getUpcomingOpenHouses } from "@/lib/property";
 
 export function OpenHouseBanner() {
   if (!getUpcomingOpenHouses().length) {
@@ -11,15 +13,18 @@ export function OpenHouseBanner() {
       <div className="open-house-times">
         {getUpcomingOpenHouses().map((openHouse) => (
           <span key={`${openHouse.date}-${openHouse.time}`}>
-            <strong>{openHouse.label}</strong>
-            {" "}
-            {openHouse.time}
+            <strong>{openHouse.label}</strong> {openHouse.time}
           </span>
         ))}
       </div>
-      <a className="open-house-link" href="#contact">
+      <TrackedLink
+        className="open-house-link"
+        href="#contact"
+        eventName={AnalyticsEvents.OpenHouseCta}
+        eventParams={{ location: "open_house_banner" }}
+      >
         Schedule a Private Tour
-      </a>
+      </TrackedLink>
     </aside>
   );
 }
