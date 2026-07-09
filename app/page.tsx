@@ -1,3 +1,4 @@
+import { CompareListing } from "@/components/CompareListing";
 import { Contact } from "@/components/Contact";
 import { Film } from "@/components/Film";
 import { Floorplans } from "@/components/Floorplans";
@@ -29,6 +30,7 @@ export default function Home() {
       <PBRS />
       <FutureShop />
       <Location />
+      <CompareListing />
       <Contact />
       <Footer />
       <StickyCTA />

@@ -1,6 +1,7 @@
 export const GOOGLE_ADS_ID = "AW-18311573663";
 
 export const AnalyticsEvents = {
+  ListingSiteClicked: "listing_site_clicked",
   WatchFilm: "watch_film_clicked",
   ScheduleTour: "schedule_tour_clicked",
   CallTodd: "call_todd_clicked",

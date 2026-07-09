@@ -106,3 +106,22 @@ export function isOpenHouseUpcoming(openHouse: OpenHouse) {
 export function getUpcomingOpenHouses() {
   return property.openHouses.filter(isOpenHouseUpcoming);
 }
+
+export const listingSites = [
+  {
+    name: "Zillow",
+    url: "https://www.zillow.com/homedetails/23670-SE-448th-St-Enumclaw-WA-98022/318323178_zpid/",
+  },
+  {
+    name: "Redfin",
+    url: "https://www.redfin.com/WA/Enumclaw/23670-SE-448th-St-98022/home/22526582",
+  },
+  {
+    name: "Realtor.com",
+    url: "https://www.realtor.com/realestateandhomes-detail/23670-SE-448th-St_Enumclaw_WA_98022_M98368-49750",
+  },
+  {
+    name: "Homes.com",
+    url: "https://www.homes.com/property/23670-se-448th-st-enumclaw-wa/v5fnrqgj3m77v/",
+  },
+] as const;
