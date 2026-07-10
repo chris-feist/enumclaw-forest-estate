@@ -33,7 +33,6 @@ Import the repository into Vercel and point `enumclawforestestate.com` to the ge
 
 The future shop image is conceptual only. PBRS usage, costs, building feasibility, permits, utilities and tax implications should be independently verified by buyers with King County and qualified professionals.
 
-
 ## v0.4.0 updates
 
 - Added fenced, turf dog run to notable features.
@@ -53,14 +52,12 @@ The future shop image is conceptual only. PBRS usage, costs, building feasibilit
 - Added a Next.js-generated robots file at `/robots.txt`.
 - Configured both files to use `https://enumclawforestestate.com` as the canonical site URL.
 
-
 ## v0.5.2
 
 - Added `public/assets/social/enumclaw-forest-estate-preview.jpg` using `public/assets/photos/photo-54.jpg`.
 - Added `app/opengraph-image.jpg` and `app/twitter-image.jpg`.
 - Updated `app/layout.tsx` with Open Graph and Twitter metadata for Apple Messages, Facebook, LinkedIn, Slack, and other social previews.
 - Confirmed canonical metadata points to `https://enumclawforestestate.com`.
-
 
 ## v0.5.3
 
@@ -70,7 +67,6 @@ The future shop image is conceptual only. PBRS usage, costs, building feasibilit
 - Added the original screenshot as `public/assets/social/social-preview-source.png` for future editing.
 - Refined social metadata descriptions for the website preview card.
 
-
 ## v0.5.4
 
 - Updated the social preview image using the approved final marketing graphic.
@@ -79,7 +75,6 @@ The future shop image is conceptual only. PBRS usage, costs, building feasibilit
 - Replaced `app/twitter-image.jpg`.
 - Saved the uploaded source graphic at `public/assets/social/enumclaw-forest-estate-preview-source.png`.
 - Updated the package version to `0.5.4`.
-
 
 ## v0.5.5
 
@@ -106,7 +101,6 @@ https://www.enumclawforestestate.com/?utm_source=facebook&utm_medium=organic_soc
 https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_video&utm_campaign=property_tour
 ```
 
-
 ## v0.5.6
 
 - Added an open house banner on the hero section.
@@ -117,7 +111,6 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 - Added NWMLS #2543724 to the contact card and footer disclosure.
 - Updated package version to `0.5.6`.
 
-
 ## v0.5.7
 
 - Added Instagram and Facebook links to centralized property data.
@@ -125,7 +118,6 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 - Added `FollowProperty` section near the bottom of the page.
 - Added social links to the header, contact area, and footer when supported by the current layout.
 - Preserved open house, CTA, Vercel Analytics, Speed Insights, and NWMLS #2543724 updates.
-
 
 ## v0.5.8
 
@@ -137,12 +129,11 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 
 ## v0.5.9
 
-  * Added real Instagram and Facebook SVG icons for social links.
-  * Added centralized section hash links for ad sitelinks in `lib/property.ts`.
-  * Added `#floorplans` and `#features` anchors for Google Ads sitelinks.
-  * Updated open house dates to use ISO values for automatic expiration while preserving display labels.
-  * Cleaned up duplicate footer MLS disclosure.
-
+- Added real Instagram and Facebook SVG icons for social links.
+- Added centralized section hash links for ad sitelinks in `lib/property.ts`.
+- Added `#floorplans` and `#features` anchors for Google Ads sitelinks.
+- Updated open house dates to use ISO values for automatic expiration while preserving display labels.
+- Cleaned up duplicate footer MLS disclosure.
 
 ## v0.6.0
 
@@ -152,7 +143,6 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 - Tracks hero film clicks, schedule-tour clicks, phone clicks, email clicks, sticky CTA clicks, and open house CTA clicks.
 - Removed visible social/follow components from the page, header, footer, and contact area to preserve the latest design direction.
 
-
 ## v0.6.1
 
 - Added configurable `listingSites` data in `lib/property.ts`.
@@ -161,9 +151,65 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 - Added responsive listing-site card styling.
 - Added `listing_site_clicked` analytics event when the analytics wrapper is present.
 
-
 ## v0.6.2
 
 - Fixed Next.js server/client boundary error in `CompareListing`.
 - Moved listing-site click tracking into `ListingSiteCard`, a client component.
 - Preserved the `Compare This Listing` section and listing site analytics tracking.
+
+## v0.6.3
+
+- Added `/portfolio` digital Property Portfolio route.
+- Added first portfolio pages: cover, quote, More Than a Home, Why Buyers Fall in Love, Property at a Glance, and Discover the Land divider.
+- Added shared `propertyFacts` and `portfolioHighlights` data in `lib/property.ts`.
+- Added print styles so the portfolio can be saved as a PDF from the browser.
+
+## Production URLs to Verify
+
+- `/`
+- `/portfolio`
+- `/sitemap.xml`
+- `/robots.txt`
+- `/manifest.webmanifest`
+
+## Change Notes
+
+### v0.9.8
+
+- Removed the direct PDF URL from `app/sitemap.ts` while keeping `/portfolio` indexed.
+- Consolidated release/change notes into this README instead of separate release note files.
+- Added a lightweight `siteConfig` helper for canonical site URLs.
+- Added `app/not-found.tsx` for a branded 404 experience.
+- Added `app/loading.tsx` for a branded route loading state.
+- Added final launch polish for sitemap, footer/navigation, and project packaging.
+- `package-lock.json` is intentionally excluded from packaged source exports.
+
+### v0.9.9
+
+- Replaced `photo-19.jpg` with `photo-08.jpg` in the Kitchen & Gathering gallery.
+- Added `photo-21.jpg` to showcase the mud room with built-in cabinetry.
+- Updated the main-level Office / Flex Bedroom image to `photo-02.jpg`.
+- Updated the upper-level Bedrooms image to `photo-28.jpg`.
+- Updated the upper-level Bath & Storage image to `photo-29.jpg`.
+- Added the new editorial “Hidden Details You’ll Appreciate” section.
+- Added a Details navigation link.
+- `package-lock.json` remains intentionally excluded from packaged source exports.
+
+### v1.0.1
+
+- Corrected all active property year references to Built 2019 to match property records.
+- Added an Oversized Laundry Room card to the upper-level interactive floor plan.
+- Reorganized the upper-level cards around the Primary Suite, Laundry Room, Bedrooms, Primary Bathroom, and Large Bonus Room.
+- Updated the portfolio floor-plan narrative to place the office / flex bedroom on the main floor and the primary suite on the upper floor.
+- Replaced the early PDF “Schedule Your Private Tour” page with a practical-luxury feature page.
+- Kept the final PDF tour/contact page as the closing call to action.
+- Rebuilt the PDF estate overview page with Built 2019.
+- Rebuilt the PDF main- and upper-level floor-plan pages to match the correct room layout.
+- `package-lock.json` remains intentionally excluded from packaged source exports.
+
+### v1.0.2
+
+- Shortened the Designed Around the Land portfolio heading to **Positioned With Intention**.
+- Rebuilt the page 21 PDF header to eliminate text overflow while preserving the existing map and design principles.
+- Updated the online portfolio route to use the same shorter title.
+- `package-lock.json` remains intentionally excluded from packaged source exports.

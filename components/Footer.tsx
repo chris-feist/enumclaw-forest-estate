@@ -13,6 +13,12 @@ export function Footer() {
         </p>
         <p>NWMLS #{property.mlsNumber}</p>
       </div>
+      <div className="footer-links">
+        <a href="/portfolio">View Portfolio</a>
+        <a href="/assets/portfolio/enumclaw-forest-estate-property-portfolio.pdf" download>
+          Download PDF
+        </a>
+      </div>
       <p>© {new Date().getFullYear()} Enumclaw Forest Estate</p>
       <SocialLinks variant="footer" />
     </footer>

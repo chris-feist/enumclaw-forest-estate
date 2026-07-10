@@ -39,3 +39,23 @@ https://www.enumclawforestestate.com/#features
 https://www.enumclawforestestate.com/#land
 https://www.enumclawforestestate.com/#contact
 ```
+
+
+## Portfolio / Download URLs
+
+Use these for sitelinks or final URL testing:
+
+- Property website: `https://www.enumclawforestestate.com/`
+- Property portfolio: `https://www.enumclawforestestate.com/portfolio`
+- Portfolio PDF: `https://www.enumclawforestestate.com/assets/portfolio/enumclaw-forest-estate-property-portfolio.pdf`
+- Buyer resources anchor: `https://www.enumclawforestestate.com/#buyer-resources`
+- Floor plans anchor: `https://www.enumclawforestestate.com/#floorplans`
+
+Recommended UTM pattern:
+
+`?utm_source=google&utm_medium=cpc&utm_campaign=<campaign_name>&utm_content=<asset_or_sitelink>`
+
+## Sitemap Notes
+
+- Indexed routes: `/` and `/portfolio`
+- The portfolio PDF is intentionally available for download but not listed directly in the sitemap.

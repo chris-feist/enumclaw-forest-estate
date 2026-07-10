@@ -8,6 +8,11 @@ export const AnalyticsEvents = {
   EmailTodd: "email_todd_clicked",
   OpenHouseCta: "open_house_cta_clicked",
   ContactSection: "contact_section_clicked",
+  DownloadPortfolio: "download_portfolio_clicked",
+  ViewPortfolio: "view_portfolio_clicked",
+  MatterportOpen: "matterport_open_clicked",
+  FloorPlanRoom: "floorplan_room_clicked",
+  GallerySection: "gallery_section_clicked",
 } as const;
 
 declare global {

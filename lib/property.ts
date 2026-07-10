@@ -125,3 +125,77 @@ export const listingSites = [
     url: "https://www.homes.com/property/23670-se-448th-st-enumclaw-wa/v5fnrqgj3m77v/",
   },
 ] as const;
+
+export const propertyFacts = {
+  name: "Enumclaw Forest Estate",
+  address: "23670 SE 448th St",
+  cityState: "Enumclaw, Washington",
+  website: "www.enumclawforestestate.com",
+  price: "$1,550,000",
+  mls: "2543724",
+  acres: "19.55",
+  squareFeet: "3,820",
+  bedrooms: "4",
+  bathrooms: "2.5",
+  garage: "4 Covered Spaces",
+  yearBuilt: "2019",
+  hoa: "No HOA",
+  generator: "Whole-Home Generator",
+  dogRun: "Fenced Turf Dog Run",
+  trails: "Private Forest Trails",
+  futureShop: "Future Shop Potential",
+  views: "Mount Rainier Views",
+} as const;
+
+export const portfolioHighlights = [
+  {
+    title: "Nearly 20 Private Acres",
+    description:
+      "A rare combination of open homesite, private forest, trails, and long-term flexibility.",
+  },
+  {
+    title: "Mount Rainier Views",
+    description:
+      "A dramatic mountain backdrop that gives the property a distinctly Pacific Northwest sense of place.",
+  },
+  {
+    title: "Custom-Built Home",
+    description:
+      "A thoughtfully designed 3,820 sq ft home with premium finishes and generous everyday living spaces.",
+  },
+  {
+    title: "Whole-Home Generator",
+    description:
+      "Automatic backup power adds peace of mind through Pacific Northwest storms and outages.",
+  },
+  {
+    title: "Private Trail Network",
+    description:
+      "Active walking trails offer a way to experience the forest without leaving your own property.",
+  },
+  {
+    title: "Future Shop Potential",
+    description:
+      "The cleared homesite area creates compelling possibilities for a future shop or additional improvements.",
+  },
+  {
+    title: "Protected Forest",
+    description:
+      "PBRS enrollment helps preserve the natural setting while contributing to lower property taxes.",
+  },
+  {
+    title: "Nature at Your Doorstep",
+    description:
+      "Bald eagles, hawks, owls, and songbirds have been regularly observed by the current owners.",
+  },
+  {
+    title: "Minutes to Town",
+    description:
+      "A private setting with downtown Enumclaw, restaurants, shopping, and everyday conveniences nearby.",
+  },
+  {
+    title: "Truly One of a Kind",
+    description:
+      "Luxury, acreage, privacy, views, and future potential come together in one exceptional property.",
+  },
+] as const;

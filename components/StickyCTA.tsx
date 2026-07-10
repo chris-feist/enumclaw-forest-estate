@@ -16,14 +16,25 @@ Thank you,`,
   );
 
   return (
-    <div className="sticky-cta" aria-label="Schedule a private tour">
+    <div className="sticky-cta" aria-label="Property actions">
       <TrackedLink
         className="button button-dark"
         href={`mailto:${realtor.email}?subject=${showingSubject}&body=${showingBody}`}
         eventName={AnalyticsEvents.ScheduleTour}
         eventParams={{ location: "sticky_cta" }}
+        aria-label="Schedule a private tour by email"
       >
         Schedule a Private Tour
+      </TrackedLink>
+      <TrackedLink
+        className="button button-light sticky-secondary"
+        href="/assets/portfolio/enumclaw-forest-estate-property-portfolio.pdf"
+        download
+        eventName={AnalyticsEvents.DownloadPortfolio}
+        eventParams={{ location: "sticky_cta" }}
+        aria-label="Download the property portfolio PDF"
+      >
+        Download PDF
       </TrackedLink>
     </div>
   );

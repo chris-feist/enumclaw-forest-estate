@@ -37,6 +37,14 @@ export function Hero() {
           >
             Schedule a Tour
           </TrackedLink>
+          <TrackedLink
+            className="button button-outline button-muted"
+            href="/portfolio"
+            eventName={AnalyticsEvents.ViewPortfolio}
+            eventParams={{ location: "hero" }}
+          >
+            View Portfolio
+          </TrackedLink>
         </div>
       </div>
 

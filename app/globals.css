@@ -1093,3 +1093,1200 @@ section[id],
     margin-inline: auto;
   }
 }
+
+/* v0.9.2 main-site portfolio and launch polish */
+.button-muted {
+  background: rgba(250, 248, 244, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.portfolio-promo {
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(169, 124, 80, 0.18),
+      transparent 34%
+    ),
+    linear-gradient(135deg, var(--forest2), var(--forest));
+  color: var(--cream);
+}
+
+.portfolio-promo-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.7fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.portfolio-promo-copy .lead {
+  color: rgba(250, 248, 244, 0.78);
+  max-width: 720px;
+}
+
+.portfolio-promo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.portfolio-promo-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+  border: 1px solid rgba(250, 248, 244, 0.18);
+  background: rgba(250, 248, 244, 0.08);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.22);
+}
+
+.portfolio-promo-image {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(12, 28, 21, 0.06), rgba(12, 28, 21, 0.86)),
+    url("/assets/portfolio/estate-overview-map.png") center / cover;
+  transform: scale(1.02);
+}
+
+.portfolio-promo-card-content {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.portfolio-promo-card-content span {
+  color: #dfbf96;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+
+.portfolio-promo-card-content strong {
+  display: block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  font-weight: 500;
+  line-height: 0.95;
+}
+
+.portfolio-promo-card-content p {
+  color: rgba(250, 248, 244, 0.75);
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.estate-glance {
+  background: var(--cream);
+  padding-top: 70px;
+}
+
+.estate-glance-heading {
+  max-width: 860px;
+  margin-bottom: 2.5rem;
+}
+
+.estate-glance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.estate-glance-grid > div {
+  background: #f6f1e9;
+  border: 1px solid rgba(31, 49, 40, 0.08);
+  padding: clamp(1.4rem, 3vw, 2.25rem);
+}
+
+.estate-glance-grid h3 {
+  color: var(--forest);
+  font-size: clamp(2rem, 3vw, 3.3rem);
+  margin-bottom: 1.4rem;
+}
+
+.estate-glance-grid dl {
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+
+.estate-glance-grid dl div {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  gap: 1rem;
+  padding: 0.95rem 0;
+  border-top: 1px solid rgba(169, 124, 80, 0.22);
+}
+
+.estate-glance-grid dt {
+  color: var(--bronze);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.estate-glance-grid dd {
+  color: var(--forest);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.4rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.sticky-cta {
+  gap: 0.75rem;
+}
+
+.sticky-secondary {
+  color: var(--forest);
+}
+
+@media (max-width: 800px) {
+  .portfolio-promo-grid,
+  .estate-glance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-promo-card {
+    min-height: 420px;
+  }
+
+  .portfolio-promo-actions,
+  .hero-actions,
+  .contact-actions {
+    flex-direction: column;
+  }
+
+  .portfolio-promo-actions .button,
+  .hero-actions .button,
+  .contact-actions .button {
+    width: 100%;
+  }
+
+  .estate-glance-grid dl div {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .sticky-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .sticky-cta .button {
+    width: 100%;
+  }
+}
+
+/* v0.9.3 mobile open house and buyer resources polish */
+.buyer-resources {
+  background: var(--paper);
+}
+
+.buyer-resources-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.buyer-resources-copy {
+  position: sticky;
+  top: 2rem;
+}
+
+.buyer-resource-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.buyer-resource-list article {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.25rem;
+  align-items: center;
+  background: var(--cream);
+  border: 1px solid rgba(31, 49, 40, 0.08);
+  padding: clamp(1.25rem, 2.5vw, 1.85rem);
+}
+
+.buyer-resource-list h3 {
+  color: var(--forest);
+  font-size: clamp(1.55rem, 2.3vw, 2.15rem);
+  line-height: 1;
+  margin-bottom: 0.45rem;
+}
+
+.buyer-resource-list p {
+  color: rgba(38, 38, 38, 0.72);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.buyer-resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.buyer-resource-links a {
+  color: var(--forest);
+  font-weight: 800;
+  border-bottom: 1px solid var(--bronze);
+}
+
+@media (max-width: 900px) {
+  .buyer-resources-grid,
+  .buyer-resource-list article {
+    grid-template-columns: 1fr;
+  }
+
+  .buyer-resources-copy {
+    position: static;
+  }
+
+  .buyer-resource-list .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .open-house-banner {
+    top: 82px !important;
+    width: min(92vw, 520px) !important;
+    gap: 0.45rem !important;
+    padding: 0.9rem 0.85rem !important;
+  }
+
+  .open-house-kicker {
+    font-size: 0.58rem !important;
+    letter-spacing: 0.18em !important;
+  }
+
+  .open-house-times {
+    display: grid !important;
+    gap: 0.25rem !important;
+  }
+
+  .open-house-times span {
+    display: flex !important;
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: baseline !important;
+    gap: 0.38rem !important;
+    white-space: normal !important;
+    line-height: 1.15 !important;
+  }
+
+  .open-house-times strong {
+    display: inline !important;
+    width: auto !important;
+    font-size: clamp(0.95rem, 4vw, 1.16rem) !important;
+    line-height: 1.05 !important;
+  }
+
+  .open-house-link {
+    font-size: 0.58rem !important;
+    letter-spacing: 0.14em !important;
+    margin-top: 0.15rem !important;
+  }
+
+  .hero {
+    min-height: 900px !important;
+    place-items: start center !important;
+  }
+
+  .hero-content {
+    padding-top: 330px !important;
+    padding-bottom: 160px !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.1rem, 14vw, 5.25rem) !important;
+    line-height: 0.82 !important;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1.35rem, 6vw, 2.15rem) !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .open-house-banner {
+    top: 76px !important;
+  }
+
+  .hero-content {
+    padding-top: 315px !important;
+  }
+}
+
+/* v0.9.4 interactive floor plans, curated gallery, and lifestyle sections */
+.gallery-section-list {
+  display: grid;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.gallery-category {
+  border-top: 1px solid rgba(169, 124, 80, 0.35);
+  padding-top: 2rem;
+}
+
+.gallery-category-heading {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 1.25rem;
+}
+
+.gallery-category-heading h3 {
+  color: var(--forest);
+  font-size: clamp(2.4rem, 4vw, 4.3rem);
+  line-height: 0.9;
+}
+
+.gallery-category-heading p {
+  color: rgba(38, 38, 38, 0.68);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.gallery-category-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-auto-rows: minmax(240px, 30vw);
+  gap: 0.8rem;
+}
+
+.gallery-category-grid figure {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  background: #e8e1d7;
+}
+
+.gallery-category-grid img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-category-grid figure:hover img {
+  transform: scale(1.035);
+}
+
+.gallery-category-wide {
+  grid-row: span 2;
+}
+
+.gallery-category-link {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: var(--forest);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--bronze);
+}
+
+.interactive-floorplans {
+  background: var(--cream);
+}
+
+.interactive-floorplan-list {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.interactive-floorplan-spread {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.floorplan-board {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(31, 49, 40, 0.1);
+  padding: 1rem;
+}
+
+.floorplan-board img {
+  object-fit: contain;
+  padding: 1.2rem;
+}
+
+.floorplan-room-panel {
+  background: #f6f1e9;
+  border: 1px solid rgba(31, 49, 40, 0.08);
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+
+.floorplan-room-panel h3 {
+  color: var(--forest);
+  font-size: clamp(2.1rem, 3vw, 3.4rem);
+  line-height: 0.95;
+  margin-bottom: 1rem;
+}
+
+.floorplan-room-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.floorplan-room-card {
+  display: grid;
+  grid-template-columns: auto 1fr 84px;
+  gap: 0.85rem;
+  align-items: center;
+  background: var(--cream);
+  border: 1px solid rgba(31, 49, 40, 0.08);
+  padding: 0.8rem;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.floorplan-room-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(31, 49, 40, 0.1);
+}
+
+.floorplan-room-card > span {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: var(--forest);
+  color: var(--cream);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.floorplan-room-card strong {
+  color: var(--forest);
+  display: block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.floorplan-room-card p {
+  color: rgba(38, 38, 38, 0.68);
+  font-size: 0.88rem;
+  line-height: 1.35;
+  margin: 0.25rem 0 0;
+}
+
+.floorplan-room-photo {
+  position: relative;
+  width: 84px;
+  height: 64px;
+  overflow: hidden;
+  background: #e8e1d7;
+}
+
+.floorplan-room-photo img {
+  object-fit: cover;
+}
+
+.floorplan-actions {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.lifestyle-timeline {
+  background:
+    linear-gradient(90deg, rgba(20, 35, 27, 0.96), rgba(20, 35, 27, 0.72)),
+    url("/assets/photos/photo-61.jpg") center / cover;
+  color: var(--cream);
+}
+
+.lifestyle-timeline-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.lifestyle-timeline-intro {
+  position: sticky;
+  top: 2rem;
+}
+
+.timeline-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.timeline-list article {
+  border-left: 2px solid var(--bronze);
+  background: rgba(250, 248, 244, 0.08);
+  padding: clamp(1.2rem, 2.5vw, 1.75rem);
+  backdrop-filter: blur(10px);
+}
+
+.timeline-list span,
+.community-guide-grid span {
+  color: #dfbf96;
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.55rem;
+  text-transform: uppercase;
+}
+
+.timeline-list h3 {
+  color: var(--cream);
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1;
+  margin-bottom: 0.6rem;
+}
+
+.timeline-list p {
+  color: rgba(250, 248, 244, 0.78);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.community-guide {
+  background: var(--paper);
+}
+
+.community-guide-header {
+  max-width: 900px;
+  margin-bottom: 2.5rem;
+}
+
+.community-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.community-guide-grid article {
+  background: var(--cream);
+  border: 1px solid rgba(31, 49, 40, 0.08);
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  min-height: 260px;
+}
+
+.community-guide-grid h3 {
+  color: var(--forest);
+  font-size: clamp(1.65rem, 2.6vw, 2.5rem);
+  line-height: 0.98;
+  margin-bottom: 0.75rem;
+}
+
+.community-guide-grid p {
+  color: rgba(38, 38, 38, 0.7);
+  line-height: 1.65;
+}
+
+@media (max-width: 1000px) {
+  .gallery-category-heading,
+  .interactive-floorplan-spread,
+  .lifestyle-timeline-grid,
+  .community-guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lifestyle-timeline-intro {
+    position: static;
+  }
+
+  .floorplan-board {
+    min-height: 460px;
+  }
+
+  .gallery-category-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 280px;
+  }
+
+  .gallery-category-wide {
+    grid-row: span 1;
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-category-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 260px;
+  }
+
+  .gallery-category-wide {
+    grid-column: span 1;
+  }
+
+  .floorplan-room-card {
+    grid-template-columns: auto 1fr;
+  }
+
+  .floorplan-room-photo {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 160px;
+  }
+
+  .floorplan-board {
+    min-height: 360px;
+  }
+}
+
+/* v0.9.5 floor plan correction, download center, final CTA */
+.download-center {
+  background:
+    radial-gradient(
+      circle at 15% 0%,
+      rgba(169, 124, 80, 0.12),
+      transparent 34%
+    ),
+    var(--paper);
+}
+
+.download-center-header {
+  max-width: 940px;
+  margin-bottom: 2.5rem;
+}
+
+.download-center-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.download-secondary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.download-card {
+  background: var(--cream);
+  border: 1px solid rgba(31, 49, 40, 0.08);
+  padding: clamp(1.3rem, 2.5vw, 2rem);
+}
+
+.download-card-featured {
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.download-card span {
+  display: block;
+  color: var(--bronze);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.download-card h3 {
+  color: var(--forest);
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 0.95;
+  margin-bottom: 0.8rem;
+}
+
+.download-card p {
+  color: rgba(38, 38, 38, 0.72);
+  line-height: 1.65;
+}
+
+.download-card-featured .button {
+  margin-top: auto;
+}
+
+.download-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1rem;
+  margin-top: 1rem;
+}
+
+.download-link-list a {
+  color: var(--forest);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--bronze);
+}
+
+.final-cta {
+  position: relative;
+  min-height: 760px;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  color: var(--cream);
+  background:
+    linear-gradient(90deg, rgba(20, 35, 27, 0.94), rgba(20, 35, 27, 0.4)),
+    url("/assets/photos/photo-63.jpeg") center / cover;
+}
+
+.final-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 70% 30%, transparent, rgba(20, 35, 27, 0.36)),
+    linear-gradient(0deg, rgba(20, 35, 27, 0.45), transparent 45%);
+}
+
+.final-cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+}
+
+.final-cta h2 {
+  color: var(--cream);
+  max-width: 850px;
+}
+
+.final-cta p {
+  color: rgba(250, 248, 244, 0.8);
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  line-height: 1.55;
+  max-width: 720px;
+}
+
+.final-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .download-center-grid,
+  .download-secondary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .download-card-featured {
+    min-height: auto;
+  }
+
+  .final-cta {
+    min-height: 680px;
+  }
+}
+
+@media (max-width: 640px) {
+  .final-cta-actions {
+    flex-direction: column;
+  }
+
+  .final-cta-actions .button {
+    width: 100%;
+  }
+}
+
+/* v0.9.6 sitemap, navigation, SEO and launch polish */
+.quick-nav {
+  position: sticky;
+  top: 0;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.7rem 1rem;
+  background: rgba(250, 248, 244, 0.92);
+  border-bottom: 1px solid rgba(31, 49, 40, 0.08);
+  backdrop-filter: blur(16px);
+}
+
+.quick-nav a {
+  color: var(--forest);
+  border: 1px solid rgba(31, 49, 40, 0.12);
+  padding: 0.48rem 0.8rem;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.quick-nav a:hover {
+  background: var(--forest);
+  color: var(--cream);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem 1.4rem;
+}
+
+.footer-links a {
+  color: rgba(250, 248, 244, 0.85);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(223, 191, 150, 0.7);
+}
+
+.buyer-faq {
+  background: var(--cream);
+}
+
+.buyer-faq-header {
+  max-width: 860px;
+  margin-bottom: 2.4rem;
+}
+
+.buyer-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.buyer-faq-grid article {
+  background: #f6f1e9;
+  border: 1px solid rgba(31, 49, 40, 0.08);
+  padding: clamp(1.25rem, 2.5vw, 1.85rem);
+}
+
+.buyer-faq-grid h3 {
+  color: var(--forest);
+  font-size: clamp(1.55rem, 2.4vw, 2.25rem);
+  line-height: 1.05;
+  margin-bottom: 0.75rem;
+}
+
+.buyer-faq-grid p {
+  color: rgba(38, 38, 38, 0.72);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .quick-nav {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-inline: 0.8rem;
+  }
+
+  .quick-nav a {
+    white-space: nowrap;
+  }
+
+  .buyer-faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .quick-nav {
+    top: 0;
+  }
+}
+
+/* v0.9.7 launch readiness accessibility and polish */
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 9999;
+  transform: translateY(-160%);
+  background: var(--forest);
+  color: var(--cream);
+  padding: 0.75rem 1rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.noscript-fallback {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 9999;
+  background: var(--forest);
+  color: var(--cream);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.24);
+}
+
+.noscript-fallback a {
+  color: #dfbf96;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+:focus-visible {
+  outline: 3px solid var(--bronze);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media print {
+  .quick-nav,
+  .sticky-cta,
+  .skip-link,
+  .noscript-fallback {
+    display: none !important;
+  }
+}
+
+/* v0.9.8 final packaging and branded fallback pages */
+.not-found-page,
+.loading-page {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background:
+    radial-gradient(
+      circle at 18% 15%,
+      rgba(169, 124, 80, 0.16),
+      transparent 34%
+    ),
+    linear-gradient(135deg, var(--cream), var(--paper));
+}
+
+.not-found-card {
+  width: min(760px, 100%);
+  background: rgba(250, 248, 244, 0.82);
+  border: 1px solid rgba(31, 49, 40, 0.12);
+  box-shadow: 0 24px 70px rgba(31, 49, 40, 0.14);
+  padding: clamp(2rem, 5vw, 4rem);
+  text-align: center;
+}
+
+.not-found-card h1 {
+  color: var(--forest);
+  font-size: clamp(3.2rem, 8vw, 7rem);
+  line-height: 0.86;
+  margin-bottom: 1.25rem;
+}
+
+.not-found-card p {
+  color: rgba(38, 38, 38, 0.72);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-inline: auto;
+  max-width: 560px;
+}
+
+.not-found-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.loading-page div {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+  color: var(--forest);
+}
+
+.loading-page span {
+  width: 42px;
+  height: 42px;
+  border: 3px solid rgba(31, 49, 40, 0.14);
+  border-top-color: var(--bronze);
+  border-radius: 999px;
+  animation: estate-spin 0.9s linear infinite;
+}
+
+.loading-page p {
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+@keyframes estate-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-page span {
+    animation: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .not-found-actions {
+    flex-direction: column;
+  }
+
+  .not-found-actions .button {
+    width: 100%;
+  }
+}
+
+/* v0.9.9 editorial property details and photo refinements */
+.property-details {
+  background:
+    radial-gradient(
+      circle at 85% 10%,
+      rgba(169, 124, 80, 0.12),
+      transparent 30%
+    ),
+    var(--cream);
+}
+
+.property-details-header {
+  max-width: 940px;
+  margin-bottom: 3rem;
+}
+
+.property-details-header .lead {
+  max-width: 760px;
+}
+
+.property-details-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.property-detail-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+  min-height: 520px;
+  border: 1px solid rgba(31, 49, 40, 0.08);
+  background: #f6f1e9;
+}
+
+.property-detail-reverse {
+  grid-template-columns: minmax(320px, 0.75fr) minmax(0, 1.25fr);
+}
+
+.property-detail-reverse figure {
+  order: 2;
+}
+
+.property-detail-card figure {
+  position: relative;
+  min-height: 520px;
+  margin: 0;
+  overflow: hidden;
+  background: #e8e1d7;
+}
+
+.property-detail-card figure img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.property-detail-card:hover figure img {
+  transform: scale(1.025);
+}
+
+.property-detail-card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(2rem, 5vw, 4.25rem);
+}
+
+.property-detail-card h3 {
+  color: var(--forest);
+  font-size: clamp(2.4rem, 4vw, 4.6rem);
+  line-height: 0.92;
+  margin-bottom: 1rem;
+}
+
+.property-detail-card > div > p:last-child {
+  color: rgba(38, 38, 38, 0.72);
+  font-size: 1.04rem;
+  line-height: 1.75;
+}
+
+.gallery-category-grid:has(figure:nth-child(5)) {
+  grid-template-columns: 1.4fr 1fr 1fr;
+}
+
+.gallery-category-grid:has(figure:nth-child(5)) figure:nth-child(5) {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .property-detail-card,
+  .property-detail-reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .property-detail-reverse figure {
+    order: 0;
+  }
+
+  .property-detail-card,
+  .property-detail-card figure {
+    min-height: 420px;
+  }
+
+  .gallery-category-grid:has(figure:nth-child(5)) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-category-grid:has(figure:nth-child(5)) figure:nth-child(5) {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .property-detail-card,
+  .property-detail-card figure {
+    min-height: 340px;
+  }
+
+  .gallery-category-grid:has(figure:nth-child(5)) {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-category-grid:has(figure:nth-child(5)) figure:nth-child(5) {
+    grid-column: span 1;
+  }
+}

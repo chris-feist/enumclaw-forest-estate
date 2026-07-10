@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAds } from "@/components/GoogleAds";
+import { PropertyJsonLd } from "@/components/PropertyJsonLd";
+import { FaqJsonLd } from "@/components/FaqJsonLd";
+import { NoScriptFallback } from "@/components/NoScriptFallback";
 import "./globals.css";
 
 const siteUrl = "https://enumclawforestestate.com";
@@ -54,7 +57,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <a className="skip-link" href="#main-content">Skip to main content</a>
         <GoogleAds />
+        <PropertyJsonLd />
+        <FaqJsonLd />
+        <NoScriptFallback />
         {children}
         <Analytics />
         <SpeedInsights />

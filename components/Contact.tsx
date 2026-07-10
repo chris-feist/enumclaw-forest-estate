@@ -42,6 +42,15 @@ Thank you,`,
             >
               Call Todd
             </TrackedLink>
+            <TrackedLink
+              className="button button-plain"
+              href="/assets/portfolio/enumclaw-forest-estate-property-portfolio.pdf"
+              download
+              eventName={AnalyticsEvents.DownloadPortfolio}
+              eventParams={{ location: "contact_section" }}
+            >
+              Download Portfolio
+            </TrackedLink>
           </div>
         </div>
 

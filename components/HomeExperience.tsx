@@ -23,7 +23,11 @@ export function HomeExperience() {
         <p className="eyebrow">Explore the home</p>
         <div className="split-heading">
           <h2>Premium details, practical systems, and room to live well.</h2>
-          <p>Built in 2019, the 3,820-square-foot residence pairs craftsman character with thoughtful upgrades, generous gathering spaces, and modern infrastructure designed for comfort in every season.</p>
+          <p>
+            Built in 2019, the 3,820-square-foot residence pairs craftsman
+            character with thoughtful upgrades, generous gathering spaces, and
+            modern infrastructure designed for comfort in every season.
+          </p>
         </div>
         <div className="interior-grid">
           {media.interiors.map(([title, url]) => (
@@ -35,7 +39,13 @@ export function HomeExperience() {
         </div>
         <div id="features" className="feature-panel">
           <h3>Notable features</h3>
-          <div className="feature-list">{features.map((feature) => <div key={feature}>✓ <span>{feature}</span></div>)}</div>
+          <div className="feature-list">
+            {features.map((feature) => (
+              <div key={feature}>
+                ✓ <span>{feature}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
