@@ -18,6 +18,7 @@ const primaryResources = [
       "Walk through the interior online before scheduling a private showing.",
     href: media.matterport,
     label: "Open 3D Tour",
+    download: false,
     meta: "Interactive interior walkthrough",
   },
   {
@@ -26,6 +27,7 @@ const primaryResources = [
       "Review public parcel data, property details, tax information, and county reference material.",
     href: "https://blue.kingcounty.com/Assessor/eRealProperty/Dashboard.aspx?ParcelNbr=2220069212",
     label: "View County Record",
+    download: false,
     meta: `Parcel ${property.parcelNumber}`,
   },
 ] as const;
