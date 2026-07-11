@@ -41,14 +41,26 @@ const gallerySections = [
   {
     title: "Outdoor Living",
     description:
-      "Covered patio space, lawn, fenced dog run, and room to enjoy the clearing.",
+      "Covered entertaining space, expansive lawn, raised garden beds, and a dedicated fenced turf dog run.",
     photos: [
-      ["/assets/photos/photo-45.jpg", "Covered patio", "wide"],
-      ["/assets/photos/photo-47.jpg", "Rear exterior and lawn", "standard"],
-      ["/assets/photos/photo-51.jpg", "Front exterior", "standard"],
       [
-        "/assets/photos/photo-55.jpg",
-        "Top-down aerial of the homesite",
+        "/assets/photos/summer-patio-lawn.jpg",
+        "Covered patio overlooking the summer lawn",
+        "wide",
+      ],
+      [
+        "/assets/photos/backyard-wide-view.jpg",
+        "Expansive backyard and forest edge",
+        "standard",
+      ],
+      [
+        "/assets/photos/raised-garden-beds.jpg",
+        "Raised garden beds near the forest",
+        "standard",
+      ],
+      [
+        "/assets/photos/fenced-turf-dog-run.jpg",
+        "Fully fenced artificial-turf dog run",
         "standard",
       ],
     ],
@@ -56,15 +68,23 @@ const gallerySections = [
   {
     title: "Land, Trails & Views",
     description:
-      "Aerial perspectives, private forest, trail access, and Mount Rainier views.",
+      "Aerial perspectives, an inviting private trail network, the estate approach, and Mount Rainier views.",
     photos: [
       [
         "/assets/photos/photo-57.jpg",
         "Aerial view of the forested acreage",
         "wide",
       ],
-      ["/assets/photos/photo-61.jpg", "Private walking trail", "standard"],
-      ["/assets/photos/photo-64.jpg", "Property boundary aerial", "standard"],
+      [
+        "/assets/photos/summer-trail.jpg",
+        "Private trail through the summer forest",
+        "standard",
+      ],
+      [
+        "/assets/photos/driveway-view-summer.jpg",
+        "Private driveway approach framed by mature trees",
+        "standard",
+      ],
       [
         "/assets/portfolio/mount-rainier-real-view.jpg",
         "Authentic Mount Rainier view",

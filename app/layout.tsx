@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAds } from "@/components/GoogleAds";
+import { MetaPixel } from "@/components/MetaPixel";
+import { AnalyticsPageViews } from "@/components/AnalyticsPageViews";
 import { PropertyJsonLd } from "@/components/PropertyJsonLd";
 import { FaqJsonLd } from "@/components/FaqJsonLd";
 import { NoScriptFallback } from "@/components/NoScriptFallback";
@@ -57,8 +59,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <a className="skip-link" href="#main-content">Skip to main content</a>
+        <a className="skip-link" href="#main-content">
+          Skip to main content
+        </a>
         <GoogleAds />
+        <MetaPixel />
+        <AnalyticsPageViews />
         <PropertyJsonLd />
         <FaqJsonLd />
         <NoScriptFallback />

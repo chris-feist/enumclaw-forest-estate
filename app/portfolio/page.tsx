@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+import { TrackedLink } from "@/components/TrackedLink";
+import { AnalyticsEvents } from "@/lib/analytics";
 import {
   listingSites,
   portfolioHighlights,
@@ -33,9 +34,9 @@ const primaryBathImage = "/assets/photos/photo-38.jpg";
 const patioImage = "/assets/photos/photo-45.jpg";
 const mountainViewImage = "/assets/photos/photo-67.jpg";
 const seasonsSpringImage = "/assets/photos/photo-61.jpg";
-const seasonsSummerImage = "/assets/photos/photo-45.jpg";
+const seasonsSummerImage = "/assets/photos/summer-patio-lawn.jpg";
 const seasonsFallImage = "/assets/photos/photo-57.jpg";
-const seasonsWinterImage = "/assets/portfolio/mount-rainier-real-view.jpg";
+const seasonsWinterImage = "/assets/photos/winter-backyard-forest.jpg";
 const differenceImage = "/assets/photos/photo-55.jpg";
 const rarityImage = "/assets/photos/photo-54.jpg";
 const closingImage = "/assets/photos/photo-63.jpeg";
@@ -93,17 +94,37 @@ function PortfolioPage({
 export default function PropertyPortfolioPage() {
   return (
     <main id="main-content" className="portfolio">
-      <div className="portfolio-actions">
-        <Link href="/" className="portfolio-back-link">
-          ← Back to Property Website
-        </Link>
-        <a
-          href="/assets/portfolio/enumclaw-forest-estate-property-portfolio.pdf"
-          className="portfolio-print-button"
-          download
-        >
-          Download PDF
-        </a>
+      <div className="portfolio-actions-shell">
+        <div className="portfolio-actions">
+          <div className="portfolio-actions-identity">
+            <span>Enumclaw Forest Estate</span>
+            <strong>Property Portfolio</strong>
+          </div>
+
+          <div className="portfolio-actions-links">
+            <TrackedLink
+              href="/"
+              className="portfolio-back-link"
+              eventName={AnalyticsEvents.ViewPortfolio}
+              eventParams={{
+                location: "portfolio_header",
+                action: "back_home",
+              }}
+            >
+              Back to Property Website
+            </TrackedLink>
+
+            <TrackedLink
+              href="/assets/portfolio/enumclaw-forest-estate-property-portfolio.pdf"
+              className="portfolio-print-button"
+              download
+              eventName={AnalyticsEvents.DownloadPortfolio}
+              eventParams={{ location: "portfolio_header" }}
+            >
+              Download Brochure
+            </TrackedLink>
+          </div>
+        </div>
       </div>
 
       <PortfolioPage className="portfolio-cover" page="Cover">
@@ -995,7 +1016,7 @@ export default function PropertyPortfolioPage() {
       >
         <div className="portfolio-seasons-header">
           <p className="portfolio-kicker">Four Seasons</p>
-          <h2>A property that changes with the year.</h2>
+          <h2>The Estate Through the Seasons</h2>
           <p>
             The estate is not experienced the same way twice. From spring
             greenery and summer evenings to fall color and quiet winter
@@ -1043,7 +1064,7 @@ export default function PropertyPortfolioPage() {
           <figure>
             <Image
               src={seasonsWinterImage}
-              alt="Mount Rainier and winter mountain views"
+              alt="Snow-covered backyard, garden shed, and private forest"
               fill
               sizes="50vw"
             />

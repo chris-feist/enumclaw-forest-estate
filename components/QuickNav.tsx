@@ -6,7 +6,7 @@ const links = [
   ["Floor Plans", property.sectionLinks.floorplans],
   ["Land", property.sectionLinks.land],
   ["Location", property.sectionLinks.location],
-  ["Downloads", "#buyer-resources"],
+  ["Resources", "#buyer-resources"],
   ["Portfolio", "/portfolio"],
 ] as const;
 

@@ -1,16 +1,25 @@
 import { AnalyticsEvents } from "@/lib/analytics";
 import { listingSites, media, property } from "@/lib/property";
 import { TrackedLink } from "./TrackedLink";
+import { TrackedSection } from "./TrackedSection";
 
 const primaryResources = [
   {
     title: "Property Portfolio",
     description:
       "The complete property book with maps, floor plans, trails, wetlands, wildlife, Mount Rainier views, and buyer reference materials.",
-    href: "/assets/portfolio/enumclaw-forest-estate-property-portfolio.pdf",
-    label: "Download PDF",
-    download: true,
+    href: "/portfolio",
+    label: "Explore Portfolio",
+    download: false,
     meta: "25-page digital property book",
+    eventName: AnalyticsEvents.ViewPortfolio,
+    // secondaryHref:
+    //   "/assets/portfolio/enumclaw-forest-estate-property-portfolio.pdf",
+    // secondaryLabel: "Download Brochure",
+    // secondaryEventName: AnalyticsEvents.DownloadPortfolio,
+    secondaryHref: undefined,
+    secondaryLabel: undefined,
+    secondaryEventName: undefined,
   },
   {
     title: "Matterport 3D Tour",
@@ -20,6 +29,10 @@ const primaryResources = [
     label: "Open 3D Tour",
     download: false,
     meta: "Interactive interior walkthrough",
+    eventName: AnalyticsEvents.MatterportOpen,
+    secondaryHref: undefined,
+    secondaryLabel: undefined,
+    secondaryEventName: undefined,
   },
   {
     title: "King County Parcel Record",
@@ -29,6 +42,10 @@ const primaryResources = [
     label: "View County Record",
     download: false,
     meta: `Parcel ${property.parcelNumber}`,
+    eventName: AnalyticsEvents.CountyRecordOpen,
+    secondaryHref: undefined,
+    secondaryLabel: undefined,
+    secondaryEventName: undefined,
   },
 ] as const;
 
@@ -47,13 +64,15 @@ const floorPlanResources = [
 
 export function BuyerResources() {
   return (
-    <section
+    <TrackedSection
       className="section buyer-resources download-center"
       id="buyer-resources"
+      eventName={AnalyticsEvents.ContactSection}
+      eventParams={{ section: "buyer_resources" }}
     >
       <div className="container">
         <div className="download-center-header">
-          <p className="eyebrow">Buyer Download Center</p>
+          <p className="eyebrow">Buyer Resources</p>
           <h2>Everything serious buyers need in one place.</h2>
           <p className="lead">
             Review the full property portfolio, explore the 3D tour, open floor
@@ -79,11 +98,7 @@ export function BuyerResources() {
                   resource.href.startsWith("http") ? "noreferrer" : undefined
                 }
                 download={resource.download}
-                eventName={
-                  resource.download
-                    ? AnalyticsEvents.DownloadPortfolio
-                    : AnalyticsEvents.ViewPortfolio
-                }
+                eventName={resource.eventName}
                 eventParams={{
                   location: "download_center",
                   resource: resource.title,
@@ -91,6 +106,23 @@ export function BuyerResources() {
               >
                 {resource.label}
               </TrackedLink>
+
+              {resource.secondaryHref &&
+                resource.secondaryLabel &&
+                resource.secondaryEventName && (
+                  <TrackedLink
+                    className="download-card-secondary-link"
+                    href={resource.secondaryHref}
+                    download
+                    eventName={resource.secondaryEventName}
+                    eventParams={{
+                      location: "download_center",
+                      resource: resource.title,
+                    }}
+                  >
+                    {resource.secondaryLabel}
+                  </TrackedLink>
+                )}
             </article>
           ))}
         </div>
@@ -146,6 +178,6 @@ export function BuyerResources() {
           </article>
         </div>
       </div>
-    </section>
+    </TrackedSection>
   );
 }

@@ -32,9 +32,9 @@ Thank you,`,
         download
         eventName={AnalyticsEvents.DownloadPortfolio}
         eventParams={{ location: "sticky_cta" }}
-        aria-label="Download the property portfolio PDF"
+        aria-label="Download the property brochure"
       >
-        Download PDF
+        Download Brochure
       </TrackedLink>
     </div>
   );

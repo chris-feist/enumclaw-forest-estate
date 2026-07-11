@@ -213,3 +213,76 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 - Rebuilt the page 21 PDF header to eliminate text overflow while preserving the existing map and design principles.
 - Updated the online portfolio route to use the same shorter title.
 - `package-lock.json` remains intentionally excluded from packaged source exports.
+
+### v1.0.3
+
+- Shortened the Four Seasons portfolio heading to `The Estate Through the Seasons`.
+- Rebuilt PDF page 18 using updated summer and winter photography.
+- Changed the open-house banner CTA to `Get Directions` and linked it to Google Maps.
+- Made the footer address clickable and linked it to Google Maps.
+- Changed user-facing `Download PDF` labels to `Download Brochure`.
+- Added current summer backyard, garden, dog-run, trail, and driveway photography.
+- Updated the existing Outdoor Living and Land, Trails & Views galleries without adding another long section.
+- `package-lock.json` remains intentionally excluded.
+
+### v1.0.4
+
+- Removed the redundant `CompareListing` component, import, and page render.
+- Renamed the quick-navigation item from `Downloads` to `Resources`.
+- Renamed the Buyer Resources section eyebrow from `Buyer Download Center` to `Buyer Resources`.
+- Added a dark forest background and light editorial heading treatment to clearly separate `BuyerResources` from `CommunityGuide`.
+- `package-lock.json` remains intentionally excluded.
+
+### v1.0.5
+
+- Installed Meta Pixel ID `869637042892768` using a dedicated Next.js `MetaPixel` component.
+- Added automatic Meta `PageView` tracking and the noscript fallback image.
+- Returned `CommunityGuide`, `BuyerResources`, and `BuyerFAQ` to the existing light cream, paper, and subtle-gradient theme.
+- Removed the dark forest Buyer Resources treatment.
+- Added subtle tonal variation and card shadows to preserve separation without using a divider.
+- Updated FAQ wording from `Buyer Download Center` to `Buyer Resources`.
+- `package-lock.json` remains intentionally excluded.
+
+### v1.0.6
+
+- Added GA4 Measurement ID `G-4GLY6T12V5` while preserving Google Ads ID `AW-18311573663`.
+- Added App Router page-view tracking for GA4 and Meta Pixel.
+- Extended the shared analytics helper so major buyer actions fire to both GA4 and Meta.
+- Added Meta standard `Lead`, `Contact`, and `ViewContent` events where appropriate.
+- Added matching Meta custom events for detailed reporting.
+- Tracks brochure downloads, portfolio views, Matterport, film clicks, directions, floor plans, listing sites, county records, calls, emails, and private-tour requests.
+- Added visibility tracking when visitors reach Buyer Resources.
+- Added tracking to footer directions, portfolio, and brochure links.
+- Disabled duplicate automatic page views in the Google and Meta base tags.
+- `package-lock.json` remains intentionally excluded.
+
+### v1.0.7
+
+- Changed the Buyer Resources Property Portfolio primary CTA to `Explore Portfolio`.
+- The primary CTA now opens the interactive `/portfolio` route.
+- Added a subtle secondary `Download Brochure` link beneath the portfolio CTA.
+- Updated the main-page portfolio section to emphasize the interactive experience.
+- Restyled the portfolio page action header as a premium rounded pill bar matching the main website.
+- Added analytics tracking to both portfolio-header actions.
+- Added mobile footer clearance so the sticky CTA no longer covers social links.
+- Added safe-area-aware positioning for the sticky mobile CTA.
+- `package-lock.json` remains intentionally excluded.
+
+### v1.0.8
+
+- Simplified the portfolio header title to `Property Portfolio`.
+- Removed the rounded pill container from the portfolio header.
+- Removed rounded corners from the portfolio header buttons.
+- Reworked the header as a clean square-edged toolbar with a thin bottom border.
+- Reduced the visual weight of the header so it better matches the main website.
+- Preserved responsive mobile stacking and analytics tracking.
+- `package-lock.json` remains intentionally excluded.
+
+### v1.0.9
+
+- Hid the portfolio identity and back-to-site control on mobile.
+- Kept only the `Download Brochure` control visible on mobile.
+- Made the mobile brochure control fixed and sticky above the safe-area inset.
+- Preserved the full square-edged portfolio toolbar on tablet and desktop.
+- Added bottom spacing to the mobile portfolio so the sticky download control does not cover content.
+- `package-lock.json` remains intentionally excluded.

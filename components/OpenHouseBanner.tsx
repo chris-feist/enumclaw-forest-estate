@@ -19,11 +19,14 @@ export function OpenHouseBanner() {
       </div>
       <TrackedLink
         className="open-house-link"
-        href="#contact"
+        href="https://www.google.com/maps/dir/?api=1&destination=23670+SE+448th+St%2C+Enumclaw%2C+WA+98022"
         eventName={AnalyticsEvents.OpenHouseCta}
         eventParams={{ location: "open_house_banner" }}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Get directions to Enumclaw Forest Estate in Google Maps"
       >
-        Schedule a Private Tour
+        Get Directions
       </TrackedLink>
     </aside>
   );

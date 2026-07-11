@@ -13,7 +13,7 @@ const questions = [
   ],
   [
     "Where can buyers find county information?",
-    "The Buyer Download Center links directly to the King County parcel record for public property data and reference materials.",
+    "The Buyer Resources section links directly to the King County parcel record for public property data and reference materials.",
   ],
 ] as const;
 

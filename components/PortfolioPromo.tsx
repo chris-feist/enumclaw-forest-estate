@@ -8,11 +8,11 @@ export function PortfolioPromo() {
       <div className="container portfolio-promo-grid">
         <div className="portfolio-promo-copy">
           <p className="eyebrow">Property Portfolio</p>
-          <h2>Download the full property book.</h2>
+          <h2>Explore the interactive property portfolio.</h2>
           <p className="lead">
-            A polished digital portfolio with the full estate story: aerial maps,
-            floor plans, trails, wetlands, wildlife, Mount Rainier views, and
-            buyer reference materials.
+            A polished, interactive presentation of the full estate story: aerial
+            maps, floor plans, trails, wetlands, wildlife, Mount Rainier views,
+            and buyer reference materials.
           </p>
 
           <div className="portfolio-promo-actions">
@@ -31,12 +31,15 @@ export function PortfolioPromo() {
               eventName={AnalyticsEvents.DownloadPortfolio}
               eventParams={{ location: "portfolio_promo" }}
             >
-              Download PDF
+              Download Brochure
             </TrackedLink>
           </div>
         </div>
 
-        <div className="portfolio-promo-card" aria-label="Property portfolio preview">
+        <div
+          className="portfolio-promo-card"
+          aria-label="Property portfolio preview"
+        >
           <div className="portfolio-promo-image" />
           <div className="portfolio-promo-card-content">
             <span>{propertyFacts.acres} acres</span>

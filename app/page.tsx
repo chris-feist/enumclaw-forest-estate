@@ -1,4 +1,3 @@
-import { CompareListing } from "@/components/CompareListing";
 import { Contact } from "@/components/Contact";
 import { Film } from "@/components/Film";
 import { Floorplans } from "@/components/Floorplans";
@@ -43,7 +42,6 @@ export default function Home() {
       <FutureShop />
       <Location />
       <CommunityGuide />
-      <CompareListing />
       <BuyerResources />
       <BuyerFAQ />
       <FinalCTA />
