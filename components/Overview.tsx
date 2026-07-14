@@ -1,6 +1,6 @@
 import { property } from "@/lib/property";
 const facts = [
-  ["$1,499,900", "Offered at"],
+  ["$1,499,990", "Offered at"],
   [property.squareFeet.toLocaleString(), "Square feet"],
   [String(property.bedrooms), "Bedrooms"],
   [String(property.bathrooms), "Bathrooms"],
