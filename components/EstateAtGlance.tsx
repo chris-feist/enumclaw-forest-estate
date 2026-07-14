@@ -1,22 +1,22 @@
-import { propertyFacts } from "@/lib/property";
+import { property, propertyDisplay } from "@/lib/property";
 
 const estateItems = [
-  ["Acreage", `${propertyFacts.acres} Acres`],
-  ["Living Area", `${propertyFacts.squareFeet} Sq Ft`],
-  ["Bedrooms", propertyFacts.bedrooms],
-  ["Bathrooms", propertyFacts.bathrooms],
-  ["Garage", propertyFacts.garage],
-  ["Built", propertyFacts.yearBuilt],
-];
+  ["Acreage", `${propertyDisplay.acres} Acres`],
+  ["Living Area", `${propertyDisplay.squareFeet} Sq Ft`],
+  ["Bedrooms", propertyDisplay.bedrooms],
+  ["Bathrooms", propertyDisplay.bathrooms],
+  ["Garage", propertyDisplay.garage],
+  ["Built", propertyDisplay.yearBuilt],
+] as const;
 
 const lifestyleItems = [
   ["Private Forest", "Mature Trees"],
-  ["Trails", propertyFacts.trails],
-  ["Views", propertyFacts.views],
-  ["Generator", propertyFacts.generator],
+  ["Trails", property.features.trails],
+  ["Views", property.features.views],
+  ["Generator", property.features.generator],
   ["Shop", "Potential Location"],
-  ["HOA", "No HOA"],
-];
+  ["HOA", property.features.hoa],
+] as const;
 
 export function EstateAtGlance() {
   return (

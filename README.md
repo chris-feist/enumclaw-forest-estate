@@ -286,3 +286,17 @@ https://www.enumclawforestestate.com/?utm_source=youtube&utm_medium=organic_vide
 - Preserved the full square-edged portfolio toolbar on tablet and desktop.
 - Added bottom spacing to the mobile portfolio so the sticky download control does not cover content.
 - `package-lock.json` remains intentionally excluded.
+
+
+### v1.1.0
+- Updated price to $1,499,990 and synchronized displayed pricing.
+
+### v1.1.1
+
+- Consolidated duplicated listing facts into the single `property` object in `lib/property.ts`.
+- Changed `property.price` to the numeric source value `1499990`.
+- Added derived `propertyDisplay` formatting for currency, compact currency, square footage, address, and other display values.
+- Removed the duplicate `propertyFacts` constant.
+- Updated the overview, estate-at-a-glance, portfolio promo, interactive portfolio, contact, sticky CTA, and footer to use the consolidated property data.
+- Future price changes now require editing only `property.price`.
+- `package-lock.json` remains intentionally excluded.

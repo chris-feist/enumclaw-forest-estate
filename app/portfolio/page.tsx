@@ -5,7 +5,7 @@ import {
   listingSites,
   portfolioHighlights,
   property,
-  propertyFacts,
+  propertyDisplay,
 } from "@/lib/property";
 import "./portfolio.css";
 
@@ -42,16 +42,16 @@ const rarityImage = "/assets/photos/photo-54.jpg";
 const closingImage = "/assets/photos/photo-63.jpeg";
 
 const glanceItems = [
-  ["Acreage", `${propertyFacts.acres} Acres`],
-  ["Living Area", `${propertyFacts.squareFeet} Sq Ft`],
-  ["Bedrooms", propertyFacts.bedrooms],
-  ["Bathrooms", propertyFacts.bathrooms],
-  ["Garage", propertyFacts.garage],
-  ["Year Built", propertyFacts.yearBuilt],
-  ["Generator", propertyFacts.generator],
-  ["Views", propertyFacts.views],
-  ["Trails", propertyFacts.trails],
-  ["MLS", `#${propertyFacts.mls}`],
+  ["Acreage", `${propertyDisplay.acres} Acres`],
+  ["Living Area", `${propertyDisplay.squareFeet} Sq Ft`],
+  ["Bedrooms", propertyDisplay.bedrooms],
+  ["Bathrooms", propertyDisplay.bathrooms],
+  ["Garage", propertyDisplay.garage],
+  ["Year Built", propertyDisplay.yearBuilt],
+  ["Generator", property.features.generator],
+  ["Views", property.features.views],
+  ["Trails", property.features.trails],
+  ["MLS", `#${property.mlsNumber}`],
 ];
 
 export const metadata = {
@@ -139,11 +139,11 @@ export default function PropertyPortfolioPage() {
         <div className="portfolio-cover-overlay" />
         <div className="portfolio-cover-content">
           <p className="portfolio-kicker">Property Portfolio</p>
-          <h1>{propertyFacts.name}</h1>
+          <h1>{property.name}</h1>
           <p className="portfolio-address">
-            {propertyFacts.address}
+            {property.address.street}
             <br />
-            {propertyFacts.cityState}
+            {propertyDisplay.cityState}
           </p>
           <p className="portfolio-cover-line">
             Nearly 20 Private Acres • Custom Home • Mount Rainier Views
@@ -157,7 +157,7 @@ export default function PropertyPortfolioPage() {
           <strong>Others become places you’ll never want to leave.</strong>
         </blockquote>
         <p>
-          Prepared exclusively for prospective buyers of {propertyFacts.name}.
+          Prepared exclusively for prospective buyers of {property.name}.
         </p>
       </PortfolioPage>
 
@@ -1229,7 +1229,7 @@ export default function PropertyPortfolioPage() {
             <a href={`mailto:${property.realtor.email}`}>
               {property.realtor.email}
             </a>
-            <span>{propertyFacts.website}</span>
+            <span>{property.website}</span>
           </div>
         </div>
       </PortfolioPage>
@@ -1301,7 +1301,7 @@ export default function PropertyPortfolioPage() {
                 {property.realtor.email}
               </a>
             </p>
-            <p className="portfolio-next-site">{propertyFacts.website}</p>
+            <p className="portfolio-next-site">{property.website}</p>
           </div>
 
           <div className="portfolio-next-links">

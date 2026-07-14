@@ -1,12 +1,15 @@
-import { property } from "@/lib/property";
+import { property, propertyDisplay } from "@/lib/property";
+
 const facts = [
-  ["$1,499,990", "Offered at"],
-  [property.squareFeet.toLocaleString(), "Square feet"],
-  [String(property.bedrooms), "Bedrooms"],
-  [String(property.bathrooms), "Bathrooms"],
-  [String(property.acres), "Private acres"],
-  [String(property.yearBuilt), "Built"],
-];
+  // TODO: If compactPrice === to price, then use compactPrice
+  [propertyDisplay.price, "Offered at"],
+  [propertyDisplay.squareFeet, "Square feet"],
+  [propertyDisplay.bedrooms, "Bedrooms"],
+  [propertyDisplay.bathrooms, "Bathrooms"],
+  [propertyDisplay.acres, "Private acres"],
+  [propertyDisplay.yearBuilt, "Built"],
+] as const;
+
 export function Overview() {
   return (
     <section id="overview" className="section cream">
@@ -22,10 +25,10 @@ export function Overview() {
           </p>
         </div>
         <div className="facts">
-          {facts.map(([v, l]) => (
-            <div key={l}>
-              <strong>{v}</strong>
-              <span>{l}</span>
+          {facts.map(([value, label]) => (
+            <div key={label}>
+              <strong>{value}</strong>
+              <span>{label}</span>
             </div>
           ))}
         </div>

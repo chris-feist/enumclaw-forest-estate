@@ -1,6 +1,6 @@
 import { TrackedLink } from "./TrackedLink";
 import { AnalyticsEvents } from "@/lib/analytics";
-import { property } from "@/lib/property";
+import { property, propertyDisplay } from "@/lib/property";
 
 export function Contact() {
   const realtor = property.realtor;
@@ -10,7 +10,7 @@ export function Contact() {
   const showingBody = encodeURIComponent(
     `Hi ${realtor.name},
 
-I would like to schedule a private tour of ${property.name} at ${property.address}.
+I would like to schedule a private tour of ${property.name} at ${propertyDisplay.fullAddress}.
 
 Thank you,`,
   );

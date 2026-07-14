@@ -1,5 +1,5 @@
 import { AnalyticsEvents } from "@/lib/analytics";
-import { property } from "@/lib/property";
+import { property, propertyDisplay } from "@/lib/property";
 
 import { BrandMark } from "./BrandMark";
 import { SocialLinks } from "./SocialLinks";
@@ -19,7 +19,7 @@ export function Footer() {
             eventName={AnalyticsEvents.GetDirections}
             eventParams={{ location: "footer" }}
           >
-            {property.address}
+            {propertyDisplay.fullAddress}
           </TrackedLink>
         </p>
         <p>

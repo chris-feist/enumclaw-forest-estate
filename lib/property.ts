@@ -1,8 +1,15 @@
 export const property = {
   name: "Enumclaw Forest Estate",
   tagline: "Modern Living. Immersed in Nature.",
-  address: "23670 SE 448th St, Enumclaw, WA 98022",
-  price: "$1,499,990",
+  website: "www.enumclawforestestate.com",
+  address: {
+    street: "23670 SE 448th St",
+    city: "Enumclaw",
+    state: "WA",
+    stateName: "Washington",
+    postalCode: "98022",
+  },
+  price: 1499990,
   mlsNumber: "2543724",
   squareFeet: 3820,
   bedrooms: 4,
@@ -15,6 +22,14 @@ export const property = {
   annualTaxes: 9618,
   taxYear: 2026,
   parcelNumber: "2220069212",
+  features: {
+    hoa: "No HOA",
+    generator: "Whole-Home Generator",
+    dogRun: "Fenced Turf Dog Run",
+    trails: "Private Forest Trails",
+    futureShop: "Future Shop Potential",
+    views: "Mount Rainier Views",
+  },
   openHouses: [
     {
       date: "2026-07-10",
@@ -56,7 +71,42 @@ export const property = {
     instagram: "https://www.instagram.com/enumclawforestestate/",
     facebook: "https://www.facebook.com/EnumclawForestEstate",
   },
-};
+} as const;
+
+export function formatCurrency(value: number) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(value);
+}
+
+export function formatCompactCurrency(value: number) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    notation: "compact",
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(value);
+}
+
+export function formatNumber(value: number) {
+  return new Intl.NumberFormat("en-US").format(value);
+}
+
+export const propertyDisplay = {
+  fullAddress: `${property.address.street}, ${property.address.city}, ${property.address.state} ${property.address.postalCode}`,
+  cityState: `${property.address.city}, ${property.address.stateName}`,
+  price: formatCurrency(property.price),
+  compactPrice: formatCompactCurrency(property.price),
+  squareFeet: formatNumber(property.squareFeet),
+  acres: String(property.acres),
+  bedrooms: String(property.bedrooms),
+  bathrooms: String(property.bathrooms),
+  garage: `${property.coveredParking} Covered Spaces`,
+  yearBuilt: String(property.yearBuilt),
+} as const;
 
 export const media = {
   hero: "/assets/photos/photo-63.jpeg",
@@ -126,26 +176,6 @@ export const listingSites = [
   },
 ] as const;
 
-export const propertyFacts = {
-  name: "Enumclaw Forest Estate",
-  address: "23670 SE 448th St",
-  cityState: "Enumclaw, Washington",
-  website: "www.enumclawforestestate.com",
-  price: "$1,550,000",
-  mls: "2543724",
-  acres: "19.55",
-  squareFeet: "3,820",
-  bedrooms: "4",
-  bathrooms: "2.5",
-  garage: "4 Covered Spaces",
-  yearBuilt: "2019",
-  hoa: "No HOA",
-  generator: "Whole-Home Generator",
-  dogRun: "Fenced Turf Dog Run",
-  trails: "Private Forest Trails",
-  futureShop: "Future Shop Potential",
-  views: "Mount Rainier Views",
-} as const;
 
 export const portfolioHighlights = [
   {

@@ -1,5 +1,5 @@
 import { AnalyticsEvents } from "@/lib/analytics";
-import { propertyFacts } from "@/lib/property";
+import { property, propertyDisplay } from "@/lib/property";
 import { TrackedLink } from "./TrackedLink";
 
 export function PortfolioPromo() {
@@ -42,9 +42,9 @@ export function PortfolioPromo() {
         >
           <div className="portfolio-promo-image" />
           <div className="portfolio-promo-card-content">
-            <span>{propertyFacts.acres} acres</span>
-            <strong>Enumclaw Forest Estate</strong>
-            <p>Modern Living. Immersed in Nature.</p>
+            <span>{propertyDisplay.acres} acres</span>
+            <strong>{property.name}</strong>
+            <p>{property.tagline}</p>
           </div>
         </div>
       </div>
