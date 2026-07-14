@@ -2,7 +2,7 @@ export const property = {
   name: "Enumclaw Forest Estate",
   tagline: "Modern Living. Immersed in Nature.",
   address: "23670 SE 448th St, Enumclaw, WA 98022",
-  price: "$1,550,000",
+  price: "$1,499,990",
   mlsNumber: "2543724",
   squareFeet: 3820,
   bedrooms: 4,
