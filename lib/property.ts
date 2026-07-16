@@ -31,19 +31,29 @@ export const property = {
     views: "Mount Rainier Views",
   },
   openHouses: [
+    // {
+    //   date: "2026-07-10",
+    //   label: "Friday, July 10",
+    //   time: "3–5 PM",
+    // },
+    // {
+    //   date: "2026-07-11",
+    //   label: "Saturday, July 11",
+    //   time: "12–2 PM",
+    // },
+    // {
+    //   date: "2026-07-12",
+    //   label: "Sunday, July 12",
+    //   time: "12–2 PM",
+    // },
     {
-      date: "2026-07-10",
-      label: "Friday, July 10",
-      time: "3–5 PM",
-    },
-    {
-      date: "2026-07-11",
-      label: "Saturday, July 11",
+      date: "2026-07-18",
+      label: "Saturday, July 18",
       time: "12–2 PM",
     },
     {
-      date: "2026-07-12",
-      label: "Sunday, July 12",
+      date: "2026-07-19",
+      label: "Sunday, July 19",
       time: "12–2 PM",
     },
   ],
@@ -175,7 +185,6 @@ export const listingSites = [
     url: "https://www.homes.com/property/23670-se-448th-st-enumclaw-wa/v5fnrqgj3m77v/",
   },
 ] as const;
-
 
 export const portfolioHighlights = [
   {
